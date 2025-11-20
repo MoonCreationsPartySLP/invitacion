@@ -378,7 +378,7 @@
     background-blend-mode: overlay, normal;
   }
 
-  /* Golden ornamental detail on flap edge - more prominent */
+  /* Golden ornamental detail on flap edge - more prominent 
   .envelope-flap::before {
     content: "";
     position: absolute;
@@ -394,7 +394,7 @@
     /* Increased opacity from 0.8 to 1 */
     opacity: 1;
     z-index: 11;
-  }
+  }*/
 
   @media (max-width: 768px) {
     .envelope-flap {
