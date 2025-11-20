@@ -378,23 +378,7 @@
     background-blend-mode: overlay, normal;
   }
 
-  /* Golden ornamental detail on flap edge - more prominent 
-  .envelope-flap::before {
-    content: "";
-    position: absolute;
-    bottom: -2px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 200px;
-    height: 60px;
-    /* Updated SVG to have thicker strokes and more visible golden color */
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 60'%3E%3Cpath d='M20,10 Q40,5 60,8 Q75,10 100,10 Q125,10 140,8 Q160,5 180,10' fill='none' stroke='%23DAA520' stroke-width='4' opacity='1'/%3E%3Cpath d='M30,15 Q50,12 70,13 Q85,14 100,14 Q115,14 130,13 Q150,12 170,15' fill='none' stroke='%23DAA520' stroke-width='3' opacity='0.9'/%3E%3Cpath d='M40,20 Q60,18 80,19 Q90,19.5 100,19.5 Q110,19.5 120,19 Q140,18 160,20' fill='none' stroke='%23DAA520' stroke-width='2' opacity='0.8'/%3E%3Ccircle cx='100' cy='15' r='5' fill='%23DAA520' opacity='0.9'/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-size: contain;
-    /* Increased opacity from 0.8 to 1 */
-    opacity: 1;
-    z-index: 11;
-  }*/
+ 
 
   @media (max-width: 768px) {
     .envelope-flap {
