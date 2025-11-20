@@ -41,7 +41,7 @@ export default function WeddingCard() {
     }, 300)
     if (audioRef.current) {
       audioRef.current.pause()
-      setIsMusicPlaying(false)
+      setIsMusicPlaying(true)
     }
   }
 
@@ -154,7 +154,7 @@ export default function WeddingCard() {
               <div className="envelope-flap" />
               <button onClick={handleOpenEnvelope} className="envelope-button" aria-label="Open envelope">
                 <img
-                  src="/elegant-wedding-monogram-s-and-h-in-gold-on-white-.jpg"
+                  src="/sello.png"
                   alt="Open invitation"
                   className="w-full h-full object-cover"
                 />
