@@ -1,0 +1,492 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* Converted oklch colors to hex/rgb for PDF compatibility */
+:root {
+  --background: #fafaf9;
+  --foreground: #292524;
+  --card: #ffffff;
+  --card-foreground: #292524;
+  --popover: #ffffff;
+  --popover-foreground: #292524;
+  --primary: #78716c;
+  --primary-foreground: #ffffff;
+  --secondary: #f5f5f4;
+  --secondary-foreground: #44403c;
+  --muted: #f5f5f4;
+  --muted-foreground: #78716c;
+  --accent: #f5f5f4;
+  --accent-foreground: #44403c;
+  --destructive: #dc2626;
+  --destructive-foreground: #ffffff;
+  --border: #e7e5e4;
+  --input: #e7e5e4;
+  --ring: #a8a29e;
+  --chart-1: #ef4444;
+  --chart-2: #3b82f6;
+  --chart-3: #8b5cf6;
+  --chart-4: #f59e0b;
+  --chart-5: #10b981;
+  --radius: 0.625rem;
+  --sidebar: #fafaf9;
+  --sidebar-foreground: #1c1917;
+  --sidebar-primary: #292524;
+  --sidebar-primary-foreground: #fafaf9;
+  --sidebar-accent: #f5f5f4;
+  --sidebar-accent-foreground: #292524;
+  --sidebar-border: #e7e5e4;
+  --sidebar-ring: #a8a29e;
+}
+
+.dark {
+  --background: #1c1917;
+  --foreground: #fafaf9;
+  --card: #1c1917;
+  --card-foreground: #fafaf9;
+  --popover: #1c1917;
+  --popover-foreground: #fafaf9;
+  --primary: #fafaf9;
+  --primary-foreground: #292524;
+  --secondary: #44403c;
+  --secondary-foreground: #fafaf9;
+  --muted: #44403c;
+  --muted-foreground: #a8a29e;
+  --accent: #44403c;
+  --accent-foreground: #fafaf9;
+  --destructive: #7f1d1d;
+  --destructive-foreground: #fca5a5;
+  --border: #44403c;
+  --input: #44403c;
+  --ring: #78716c;
+  --chart-1: #8b5cf6;
+  --chart-2: #10b981;
+  --chart-3: #f59e0b;
+  --chart-4: #a855f7;
+  --chart-5: #ef4444;
+  --sidebar: #292524;
+  --sidebar-foreground: #fafaf9;
+  --sidebar-primary: #8b5cf6;
+  --sidebar-primary-foreground: #fafaf9;
+  --sidebar-accent: #44403c;
+  --sidebar-accent-foreground: #fafaf9;
+  --sidebar-border: #44403c;
+  --sidebar-ring: #78716c;
+}
+
+@theme inline {
+  --font-sans: "Geist", "Geist Fallback";
+  --font-mono: "Geist Mono", "Geist Mono Fallback";
+  --font-serif: "Playfair Display", Georgia, serif;
+  /* Adding Cormorant Garamond as elegant display font */
+  --font-display: "Cormorant Garamond", "Playfair Display", Georgia, serif;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Improved envelope design with cleaner structure and better dimensions */
+@layer components {
+  .envelope-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    aspect-ratio: 1.75 / 1;
+    margin: 0 auto;
+    /* Added initial flip state and animation */
+    transform: rotateY(180deg);
+    transition: transform 1.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+
+  /* Mobile responsive envelope */
+  @media (max-width: 768px) {
+    .envelope-container {
+      max-width: 90vw;
+      aspect-ratio: 1.6 / 1;
+    }
+  }
+
+  /* Envelope flips to front when class is added */
+  .envelope-container.flipped {
+    transform: rotateY(0deg);
+  }
+
+  /* Main envelope body - stronger solid pearl/beige color to eliminate any transparency */
+  .envelope-body {
+    position: absolute;
+    inset: 0;
+    /* Solid gradient in warm cream/beige tones like reference image */
+    background: linear-gradient(135deg, #e8dfd2 0%, #d9cfc2 50%, #ccc2b5 100%);
+    border-radius: 3px;
+    box-shadow:
+      0 25px 60px rgba(80, 60, 40, 0.4),
+      0 12px 30px rgba(80, 60, 40, 0.3),
+      0 4px 12px rgba(0, 0, 0, 0.2),
+      inset 0 2px 8px rgba(255, 255, 255, 0.5),
+      inset 0 -2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    /* Subtle paper texture overlay - completely opaque */
+    background-image: repeating-linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0.08) 0px,
+        transparent 2px,
+        transparent 4px,
+        rgba(255, 255, 255, 0.08) 6px
+      ),
+      repeating-linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.08) 0px,
+        transparent 2px,
+        transparent 4px,
+        rgba(255, 255, 255, 0.08) 6px
+      ), radial-gradient(circle at 30% 40%, rgba(255, 255, 255, 0.15) 0%, transparent 60%),
+      radial-gradient(circle at 70% 60%, rgba(0, 0, 0, 0.08) 0%, transparent 60%),
+      linear-gradient(135deg, #e8dfd2 0%, #d9cfc2 50%, #ccc2b5 100%);
+    background-blend-mode: overlay, overlay, overlay, multiply, normal;
+  }
+
+  /* Removing corner ornaments and moving golden details only to edges */
+  .envelope-corner {
+    display: none;
+  }
+
+  /* Simplified ornamental golden border details on envelope edges only */
+  .envelope-ornament {
+    position: absolute;
+    z-index: 3;
+    /* Increased opacity from 0.5 to 1 and made golden color more prominent */
+    opacity: 0.8;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: opacity 0.6s ease;
+  }
+
+  .envelope-ornament.left-ornament {
+    left: 0;
+    top: 0;
+    bottom: 0;
+    /* Increased width from 3px to 6px for better visibility */
+    width: 6px;
+    height: 100%;
+    /* Strengthened golden color and increased opacity */
+    background: linear-gradient(
+      to bottom,
+      transparent 0%,
+      rgba(201, 169, 97, 0.9) 10%,
+      rgba(212, 175, 55, 1) 30%,
+      rgba(201, 169, 97, 0.9) 90%,
+      transparent 100%
+    );
+    box-shadow: 1px 0 6px rgba(212, 175, 55, 0.8), inset -1px 0 2px rgba(255, 215, 0, 0.5);
+  }
+
+  .envelope-ornament.right-ornament {
+    right: 0;
+    top: 0;
+    bottom: 0;
+    /* Increased width from 3px to 6px for better visibility */
+    width: 6px;
+    height: 100%;
+    /* Strengthened golden color and increased opacity */
+    background: linear-gradient(
+      to bottom,
+      transparent 0%,
+      rgba(201, 169, 97, 0.9) 10%,
+      rgba(212, 175, 55, 0.8) 30%,
+      rgba(201, 169, 97, 0.9) 90%,
+      transparent 100%
+    );
+    box-shadow: -1px 0 6px rgba(212, 175, 55, 0.8), inset 1px 0 2px rgba(255, 215, 0, 0.5);
+  }
+
+  .envelope-ornament-center {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    /* Increased height from 3px to 6px for better visibility */
+    height: 6px;
+    z-index: 3;
+    /* Increased opacity from 0.5 to 1 */
+    opacity: 0.8;
+    /* Strengthened golden color and increased opacity */
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      rgba(201, 169, 97, 0.9) 10%,
+      rgba(212, 175, 55, 0.8) 30%,
+      rgba(201, 169, 97, 0.9) 90%,
+      transparent 100%
+    );
+    box-shadow: 0 1px 6px rgba(212, 175, 55, 0.8), inset 0 -1px 2px rgba(255, 215, 0, 0.5);
+    transition: opacity 0.6s ease;
+  }
+
+  @media (max-width: 768px) {
+    .envelope-ornament.left-ornament,
+    .envelope-ornament.right-ornament {
+      width: 80px;
+      height: 120px;
+    }
+
+    .envelope-ornament-center {
+      width: 140px;
+      height: 40px;
+    }
+  }
+
+  .envelope-container.opened .envelope-ornament,
+  .envelope-container.opened .envelope-ornament-center {
+    opacity: 0;
+  }
+
+  /* Decorative border frame - keeping for depth */
+  .envelope-frame {
+    position: absolute;
+    inset: 25px;
+    border: 1.5px solid rgba(201, 169, 97, 0.25);
+    border-radius: 2px;
+    z-index: 4;
+    pointer-events: none;
+    box-shadow: inset 0 1px 3px rgba(255, 255, 255, 0.5), inset 0 -1px 3px rgba(0, 0, 0, 0.15);
+    transition: opacity 0.6s ease;
+  }
+
+  @media (max-width: 768px) {
+    .envelope-frame {
+      inset: 15px;
+      border-width: 1px;
+    }
+  }
+
+  .envelope-container.opened .envelope-frame {
+    opacity: 0;
+  }
+
+  /* Address text in calligraphy style on envelope front */
+  .envelope-address {
+    position: absolute;
+    top: 25%;
+    right: 18%;
+    z-index: 6;
+    text-align: left;
+    transition: opacity 0.6s ease;
+  }
+
+  @media (max-width: 768px) {
+    .envelope-address {
+      right: 12%;
+      top: 22%;
+    }
+
+    .calligraphy-text {
+      font-size: 14px;
+    }
+  }
+
+  .envelope-container.opened .envelope-address {
+    opacity: 0;
+  }
+
+  .calligraphy-text {
+    font-family: "Brush Script MT", "Lucida Calligraphy", cursive;
+    font-size: 17px;
+    color: rgba(50, 40, 30, 0.85);
+    margin: 3px 0;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 0.3px;
+    line-height: 1.6;
+  }
+
+  /* Updated flap to elegant scalloped shape with thick golden border and beige/pearl color */
+  .envelope-flap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 52%;
+    /* Solid beige/pearl gradient matching envelope body */
+    background: linear-gradient(to bottom, #d4cdc3 0%, #c9c0b5 50%, #bfb5a8 100%);
+    /* Elegant scalloped flap shape with decorative curves */
+    clip-path: path(
+      "M 0,0 L 800,0 L 800,180 Q 750,160 700,160 Q 650,160 600,180 Q 550,200 500,220 Q 450,240 400,240 Q 350,240 300,220 Q 250,200 200,180 Q 150,160 100,160 Q 50,160 0,180 Z"
+    );
+    transform-origin: top center;
+    transition: transform 1.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    z-index: 10;
+    box-shadow:
+      0 20px 50px rgba(80, 60, 40, 0.45),
+      0 10px 25px rgba(80, 60, 40, 0.35),
+      inset 0 -15px 30px rgba(0, 0, 0, 0.12),
+      inset 0 2px 8px rgba(255, 255, 255, 0.4);
+    /* Increased border thickness from 3px to 5px and made golden color more vibrant */
+    border: 2px solid rgba(218, 165, 32, 0.95);
+    border-top: none;
+    /* Subtle paper texture - opaque */
+    background-image: repeating-linear-gradient(
+        45deg,
+        rgba(255, 255, 255, 0.03) 0px,
+        transparent 3px,
+        transparent 6px,
+        rgba(255, 255, 255, 0.03) 9px
+      ), linear-gradient(to bottom, #d4cdc3 0%, #c9c0b5 50%, #bfb5a8 100%);
+    background-blend-mode: overlay, normal;
+  }
+
+  /* Golden ornamental detail on flap edge - more prominent */
+  .envelope-flap::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 60px;
+    /* Updated SVG to have thicker strokes and more visible golden color */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 60'%3E%3Cpath d='M20,10 Q40,5 60,8 Q75,10 100,10 Q125,10 140,8 Q160,5 180,10' fill='none' stroke='%23DAA520' stroke-width='4' opacity='1'/%3E%3Cpath d='M30,15 Q50,12 70,13 Q85,14 100,14 Q115,14 130,13 Q150,12 170,15' fill='none' stroke='%23DAA520' stroke-width='3' opacity='0.9'/%3E%3Cpath d='M40,20 Q60,18 80,19 Q90,19.5 100,19.5 Q110,19.5 120,19 Q140,18 160,20' fill='none' stroke='%23DAA520' stroke-width='2' opacity='0.8'/%3E%3Ccircle cx='100' cy='15' r='5' fill='%23DAA520' opacity='0.9'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* Increased opacity from 0.8 to 1 */
+    opacity: 1;
+    z-index: 11;
+  }
+
+  @media (max-width: 768px) {
+    .envelope-flap {
+      border-width: 2px;
+      /* Simplified path for mobile - scaled proportionally */
+      clip-path: path(
+        "M 0,0 L 400,0 L 400,90 Q 375,80 350,80 Q 325,80 300,90 Q 275,100 250,110 Q 225,120 200,120 Q 175,120 150,110 Q 125,100 100,90 Q 75,80 50,80 Q 25,80 0,90 Z"
+      );
+    }
+
+    .envelope-flap::before {
+      width: 140px;
+      height: 40px;
+    }
+  }
+
+  .envelope-container.opened .envelope-flap {
+    transform: rotateX(-180deg);
+  }
+
+  /* Updated circular button with transparent background support for seal */
+  .envelope-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: 20;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+    padding: 0;
+  }
+
+  @media (max-width: 768px) {
+    .envelope-button {
+      width: 110px;
+      height: 110px;
+      padding: 0;
+    }
+  }
+
+  .envelope-button:hover {
+    transform: translate(-50%, -50%) scale(1.08);
+    box-shadow: none;
+  }
+
+  .envelope-button:active {
+    transform: translate(-50%, -50%) scale(1.02);
+  }
+
+  .envelope-container.opened .envelope-button {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  /* Added card slide-up animation from envelope */
+  @keyframes slide-up {
+    0% {
+      opacity: 0;
+      transform: translateY(150px) scale(0.8);
+    }
+    60% {
+      transform: translateY(-10px) scale(1.02);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+
+  .animate-slide-up {
+    animation: slide-up 1s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  .animate-fade-in {
+    animation: fade-in 0.6s ease-out;
+  }
+}
