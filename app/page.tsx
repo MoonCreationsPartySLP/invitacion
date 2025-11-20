@@ -155,7 +155,6 @@ export default function WeddingCard() {
               <button onClick={handleOpenEnvelope} className="envelope-button" aria-label="Open envelope">
                 <img
                   src="/sello.png"
-                  alt="Open invitation"
                   className="w-full h-full object-cover"
                 />
               </button>
