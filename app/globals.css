@@ -313,7 +313,7 @@
     top: 70%;
     right: 30%;
     z-index: 6;
-    text-align: left;
+    text-align: center;
     transition: opacity 0.6s ease;
   }
 
