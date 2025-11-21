@@ -177,10 +177,7 @@ export default function WeddingCard() {
               <div className="envelope-frame" />
 
               <div className="envelope-address">
-                <p className="calligraphy-text">Sterling Hayes</p>
-                <p className="calligraphy-text">123 Ash Ave</p>
-                <p className="calligraphy-text">Oswego, CA</p>
-                <p className="calligraphy-text">14054</p>
+                <p className="calligraphy-text">Angeles & Sterling Hayes</p>
               </div>
 
               <div className="envelope-flap" />
