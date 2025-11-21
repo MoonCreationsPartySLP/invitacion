@@ -310,8 +310,8 @@
   /* Address text in calligraphy style on envelope front */
   .envelope-address {
     position: absolute;
-    top: 25%;
-    right: 18%;
+    top: 70%;
+    right: 30%;
     z-index: 6;
     text-align: left;
     transition: opacity 0.6s ease;
@@ -334,7 +334,7 @@
 
   .calligraphy-text {
     font-family: "Brush Script MT", "Lucida Calligraphy", cursive;
-    font-size: 17px;
+    font-size: 35px;
     color: rgba(50, 40, 30, 0.85);
     margin: 3px 0;
     font-weight: 400;
