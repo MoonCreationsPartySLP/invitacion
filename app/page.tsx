@@ -177,7 +177,7 @@ export default function WeddingCard() {
               <div className="envelope-frame" />
               <div className="absolute left-1/2 transform -translate-x-1/2 mt-4 md:mt-6" style={{ top: "100%" }}>
                 <img
-                  src="/images/imagennames.png"
+                  src="/imagennames.png"
                   alt="Postal image"
                   className="w-24 h-20 md:w-32 md:h-28 object-cover rounded-sm shadow-lg border border-stone-200"
                 />
