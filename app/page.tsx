@@ -88,7 +88,7 @@ export default function WeddingCard() {
 
       element.innerHTML = `
         <div style="text-align: center; font-family: 'Cormorant Garamond', serif;">
-          <img src="/elegant-wedding-invitation-card-with-ampersand-mon.jpg" alt="Wedding Invitation" style="width: 100%; max-width: 600px; margin-bottom: 40px;" crossorigin="anonymous" />
+          <img src="/wedding1.jpg" alt="Wedding Invitation" style="width: 100%; max-width: 600px; margin-bottom: 40px;" crossorigin="anonymous" />
           <h1 style="color: #8B7355; font-size: 32px; margin-bottom: 20px; letter-spacing: 0.2em;">WEDDING DETAILS</h1>
           <div style="text-align: left; max-width: 500px; margin: 0 auto; line-height: 1.8; font-size: 16px;">
             <h2 style="color: #5C4A3A; margin-top: 30px; text-align: center; letter-spacing: 0.15em;">LOCATIONS</h2>
@@ -215,7 +215,7 @@ export default function WeddingCard() {
                 }}
               >
                 <img
-                  src="/elegant-wedding-invitation-card-with-ampersand-mon.jpg"
+                  src="/wedding1.jpg"
                   alt="Wedding Invitation"
                   className="w-full h-full object-cover"
                 />
