@@ -422,6 +422,36 @@
     pointer-events: none;
   }
 
+   /* Added postal image styles - responsive positioning and sizing */
+  .absolute-postal-image {
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 700px;
+    height: 200px;
+    z-index: 21;
+    border-radius: 2px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15), inset 0 1px 2px rgba(255, 255, 255, 0.3);
+    overflow: hidden;
+    border: 0px solid rgba(212, 175, 55, 0.4);
+  }
+
+  .postal-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @media (max-width: 768px) {
+    .absolute-postal-image {
+      width: 700px;
+      height: 200px;
+      bottom: 12%;
+      border-width: 1.5px;
+    }
+  }
+  
   /* Added card slide-up animation from envelope */
   @keyframes slide-up {
     0% {
