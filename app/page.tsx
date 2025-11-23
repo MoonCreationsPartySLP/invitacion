@@ -209,9 +209,11 @@ export default function WeddingCard() {
               }}
             >
               <Card
-                className="w-full aspect-[4/3] bg-white border-2 border-stone-200 shadow-2xl overflow-hidden p-0"
+                className="w-full bg-white border-2 border-stone-200 shadow-2xl overflow-hidden p-0"
                 style={{
                   backfaceVisibility: "hidden",
+                  aspectRatio: "1024 / 2000",
+                  maxWidth: "100%",
                 }}
               >
                 <img
@@ -222,10 +224,12 @@ export default function WeddingCard() {
               </Card>
 
               <Card
-                className="absolute inset-0 w-full aspect-[4/3] bg-white border-2 border-stone-200 shadow-2xl overflow-hidden"
+                className="absolute inset-0 w-full bg-white border-2 border-stone-200 shadow-2xl overflow-hidden"
                 style={{
                   backfaceVisibility: "hidden",
                   transform: "rotateY(180deg)",
+                  aspectRatio: "1024 / 2000",
+                  maxWidth: "100%",
                 }}
               >
                 <div className="h-full flex flex-col p-6 md:p-8 lg:p-12 overflow-y-auto">
