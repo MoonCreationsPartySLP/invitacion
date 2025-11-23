@@ -175,13 +175,20 @@ export default function WeddingCard() {
               <div className="envelope-ornament-center" />
 
               <div className="envelope-frame" />
-              <div className="absolute left-1/2 transform -translate-x-1/2 mt-4 md:mt-6" style={{ top: "100%" }}>
-                <img
-                  src="public/imagennames.png"
-                  alt="Postal image"
-                  className="w-240 h-20 md:w-32 md:h-28 object-cover rounded-sm shadow-lg border border-stone-200"
-                />
-              </div>
+              <div 
+              className="absolute left-1/2 transform -translate-x-1/2"
+              style={{ top: "58%" }}>   // AJUSTA ESTE VALOR PARA SUBIR/BAJAR
+              <img
+                src="/imagennames.png"    
+                alt="Postal image"
+                style={{
+                  width: "700px",
+                  height: "200px",
+                  objectFit: "contain",
+                }}
+                className="shadow-lg rounded-sm border border-stone-200"
+              />
+            </div>
               /*<div className="envelope-address">
                 <p className="calligraphy-text">Angeles & Sterling Hayes</p>
               </div>*/
