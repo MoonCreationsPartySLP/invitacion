@@ -212,7 +212,7 @@ export default function WeddingCard() {
                 className="w-full bg-white border-2 border-stone-200 shadow-2xl overflow-hidden p-0"
                 style={{
                   backfaceVisibility: "hidden",
-                  aspectRatio: "1024 / 2000",
+                  aspectRatio: "1080 / 1920",
                   maxWidth: "100%",
                 }}
               >
@@ -228,7 +228,7 @@ export default function WeddingCard() {
                 style={{
                   backfaceVisibility: "hidden",
                   transform: "rotateY(180deg)",
-                  aspectRatio: "1024 / 2000",
+                  aspectRatio: "1080 / 1920",
                   maxWidth: "100%",
                 }}
               >
