@@ -179,7 +179,7 @@ export default function WeddingCard() {
                 <img
                   src="public/imagennames.png"
                   alt="Postal image"
-                  className="w-24 h-20 md:w-32 md:h-28 object-cover rounded-sm shadow-lg border border-stone-200"
+                  className="w-240 h-20 md:w-32 md:h-28 object-cover rounded-sm shadow-lg border border-stone-200"
                 />
               </div>
               /*<div className="envelope-address">
