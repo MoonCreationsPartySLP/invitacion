@@ -473,4 +473,22 @@
   .animate-fade-in {
     animation: fade-in 0.6s ease-out;
   }
+  /* Added responsive card sizing styles for 1024x2000px dimensions */
+  @layer utilities {
+    @media (min-width: 768px) {
+      .card-responsive {
+        width: 100%;
+        max-width: 1024px;
+        aspect-ratio: 1024 / 2000;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .card-responsive {
+        width: 100%;
+        max-width: 90vw;
+        aspect-ratio: 1024 / 2000;
+      }
+    }
+  }
 }
