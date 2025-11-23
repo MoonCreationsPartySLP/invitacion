@@ -228,7 +228,7 @@ export default function WeddingCard() {
                 style={{
                   backfaceVisibility: "hidden",
                   transform: "rotateY(180deg)",
-                  aspectRatio: "1080 / 1024",
+                  aspectRatio: "1080 / 1920",
                   maxWidth: "100%",
                 }}
               >
