@@ -177,9 +177,9 @@ export default function WeddingCard() {
               <div className="envelope-frame" />
               <div 
               className="absolute left-1/2 transform -translate-x-1/2"
-              style={{ top: "58%",
+              style={{ top: "50%",
                       zIndex: 50 
-                    }}>   // AJUSTA ESTE VALOR PARA SUBIR/BAJAR
+                    }}>
               <img
                 src="/imagennames.png"    
                 alt="Postal image"
