@@ -188,7 +188,7 @@ export default function WeddingCard() {
                   height: "200px",
                   objectFit: "contain",
                 }}
-                className="shadow-lg rounded-sm border border-stone-200"
+                className="shadow-lg rounded-sm"
               />
             </div>
               /*<div className="envelope-address">
