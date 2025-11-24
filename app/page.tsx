@@ -192,7 +192,7 @@ export default function WeddingCard() {
               />
             </div>
               /*<div className="envelope-address">
-                <p className="calligraphy-text">Angeles & Sterling Hayes</p>
+                <p className="calligraphy-text"></p>
               </div>*/
 
               <div className="envelope-flap" />
