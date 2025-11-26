@@ -268,10 +268,7 @@ export default function WeddingCard() {
                         Padres de la novia
                       </h4>
                       <p className="text-sm md:text-base lg:text-lg font-display text-stone-600">
-                        Marcelina Vázquez
-                      </p>
-                       <p className="text-sm md:text-base lg:text-lg font-display text-stone-600">
-                        &
+                        Marcelina Vázquez y
                       </p>
                        <p className="text-sm md:text-base lg:text-lg font-display text-stone-600">
                         Luis Zapata
@@ -283,10 +280,7 @@ export default function WeddingCard() {
                         Padres del novio
                       </h4>
                       <p className="text-sm md:text-base lg:text-lg font-display text-stone-600">
-                        Irene Torres
-                      </p>
-                      <p className="text-sm md:text-base lg:text-lg font-display text-stone-600">
-                        &
+                        Irene Torres y
                       </p>
                       <p className="text-sm md:text-base lg:text-lg font-display text-stone-600">
                         Eduardo Contreras 
