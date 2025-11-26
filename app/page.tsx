@@ -249,10 +249,10 @@ export default function WeddingCard() {
               >
                 <div className="h-full flex flex-col p-6 md:p-8 lg:p-12 overflow-y-auto">
                   <h2 className="text-2xl md:text-3xl lg:text-4xl font-display font-light text-[#8B7355] text-center mb-6 md:mb-8 tracking-[0.25em] uppercase">
-                    Details
+                    Detalles
                   </h2>
 
-                  <div className="border-t border-stone-300 pt-6 md:pt-8" />
+                  <div className="border-t border-transparent pt-6 md:pt-8" />
                   
                   <div className="space-y-3 md:space-y-4">
                       <div className="text-center space-y-1 md:space-y-2">
@@ -268,7 +268,13 @@ export default function WeddingCard() {
                         Padres de la novia
                       </h4>
                       <p className="text-sm md:text-base lg:text-lg font-display text-stone-600">
-                        Marcelina Vázquez y Luis Zapata
+                        Marcelina Vázquez
+                      </p>
+                       <p className="text-sm md:text-base lg:text-lg font-display text-stone-600">
+                        &
+                      </p>
+                       <p className="text-sm md:text-base lg:text-lg font-display text-stone-600">
+                        Luis Zapata
                       </p>
                     </div>
           
@@ -277,12 +283,21 @@ export default function WeddingCard() {
                         Padres del novio
                       </h4>
                       <p className="text-sm md:text-base lg:text-lg font-display text-stone-600">
-                        Marcelina Vázquez y Luis Zapata
+                        Irene Torres
+                      </p>
+                      <p className="text-sm md:text-base lg:text-lg font-display text-stone-600">
+                        &
+                      </p>
+                      <p className="text-sm md:text-base lg:text-lg font-display text-stone-600">
+                        Eduardo Contreras 
                       </p>
                     </div>
                   
                   </div>
                   </div>
+
+                  <div className="pt-6 md:pt-8" />
+                  
                   <div className="flex-1 space-y-6 md:space-y-10">
                     <h3 className="text-lg md:text-xl lg:text-2xl font-display font-medium text-stone-700 text-center tracking-[0.2em] uppercase">
                       Locations
