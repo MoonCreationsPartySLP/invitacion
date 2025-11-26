@@ -263,8 +263,6 @@ export default function WeddingCard() {
                    </div>
                     
                  <div className="flex flex-col sm:flex-row justify-center gap-16 mt-6">
-                  
-                    /* Columna 1 - Padres de la novia */
                     <div className="text-center space-y-2">
                       <h4 className="font-display font-semibold text-stone-800 text-lg md:text-xl lg:text-2xl tracking-wide">
                         Padres de la novia
@@ -273,8 +271,7 @@ export default function WeddingCard() {
                         Marcelina Vázquez y Luis Zapata
                       </p>
                     </div>
-                  
-                    /* Columna 2 - Padres del novio */
+          
                     <div className="text-center space-y-2">
                       <h4 className="font-display font-semibold text-stone-800 text-lg md:text-xl lg:text-2xl tracking-wide">
                         Padres del novio
