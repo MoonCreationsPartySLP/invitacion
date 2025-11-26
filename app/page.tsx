@@ -259,10 +259,23 @@ export default function WeddingCard() {
                         <p className="text-sm md:text-base lg:text-lg font-display font-medium text-stone-700">
                           Cada momento juntos nos ha llevado a este día tan especial. Junto a nuestros padres, tenemos el honor de invitarte a celebrar nuestra boda y compartir con nosotros la felicidad de comenzar una nueva etapa en nuestras vidas.
                         </p>
-                        <p className="text-sm md:text-base lg:text-lg font-display text-stone-600">
-                          600 S Jupiter Rd Richardson, TX 75081
-                        </p>
+                        
                       </div>
+                    
+                     <div className="flex flex-col sm:flex-row justify-center gap-3 md:gap-6 mt-3 md:mt-4">
+                       <h4 className="font-display font-semibold text-stone-800 text-center text-lg md:text-xl lg:text-2xl tracking-wide">
+                        Padres de la novia
+                      </h4>
+                       <div className="text-center space-y-1 md:space-y-2">
+                        <p className="text-sm md:text-base lg:text-lg font-display text-stone-600"> Marcelina Vázquez y Luis Zapata </p>
+                      </div>
+                       <h4 className="font-display font-semibold text-stone-800 text-center text-lg md:text-xl lg:text-2xl tracking-wide">
+                        Padres del novio
+                      </h4>
+                      <div className="text-center space-y-1 md:space-y-2">
+                        <p className="text-sm md:text-base lg:text-lg font-display text-stone-600"> Marcelina Vázquez y Luis Zapata </p>
+                      </div>
+                    
                   </div>
                   
                   <div className="flex-1 space-y-6 md:space-y-10">
@@ -287,6 +300,7 @@ export default function WeddingCard() {
                         <p className="text-sm md:text-base lg:text-lg font-display text-stone-600">Mass</p>
                         <p className="text-sm md:text-base lg:text-lg font-display text-stone-600">1:30PM</p>
                       </div>
+                      
                       <div className="flex flex-col sm:flex-row justify-center gap-3 md:gap-6 mt-3 md:mt-4">
                         <Button
                           variant="link"
