@@ -263,7 +263,7 @@ export default function WeddingCard() {
                           600 S Jupiter Rd Richardson, TX 75081
                         </p>
                       </div>
-                    
+                  </div>
                   <div className="flex-1 space-y-6 md:space-y-10">
                     <h3 className="text-lg md:text-xl lg:text-2xl font-display font-medium text-stone-700 text-center tracking-[0.2em] uppercase">
                       Locations
