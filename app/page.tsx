@@ -278,6 +278,19 @@ export default function WeddingCard() {
                       <div className="text-center space-y-1 md:space-y-2">
                         <p className="text-sm md:text-base lg:text-lg font-display text-stone-600"> Marcelina Vázquez y Luis Zapata </p>
                       </div>
+                   
+                    <div className="flex flex-col sm:flex-row justify-center gap-3 md:gap-6 mt-3 md:mt-4">
+                       
+                       <div className="text-center space-y-1 md:space-y-2">
+                        <p className="text-sm md:text-base lg:text-lg font-display text-stone-600"> Marcelina Vázquez y Luis Zapata </p>
+                      </div>
+                       
+                      <div className="text-center space-y-1 md:space-y-2">
+                        <p className="text-sm md:text-base lg:text-lg font-display text-stone-600"> Marcelina Vázquez y Luis Zapata </p>
+                      </div>
+                      
+                  </div>
+                   
                     </div>
                   </div>
                   
