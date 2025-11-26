@@ -253,7 +253,17 @@ export default function WeddingCard() {
                   </h2>
 
                   <div className="border-t border-stone-300 pt-6 md:pt-8" />
-
+                  
+                  <div className="space-y-3 md:space-y-4">
+                      <div className="text-center space-y-1 md:space-y-2">
+                        <p className="text-sm md:text-base lg:text-lg font-display font-medium text-stone-700">
+                          Cada momento juntos nos ha llevado a este día tan especial. Junto a nuestros padres, tenemos el honor de invitarte a celebrar nuestra boda y compartir con nosotros la felicidad de comenzar una nueva etapa en nuestras vidas.
+                        </p>
+                        <p className="text-sm md:text-base lg:text-lg font-display text-stone-600">
+                          600 S Jupiter Rd Richardson, TX 75081
+                        </p>
+                      </div>
+                    
                   <div className="flex-1 space-y-6 md:space-y-10">
                     <h3 className="text-lg md:text-xl lg:text-2xl font-display font-medium text-stone-700 text-center tracking-[0.2em] uppercase">
                       Locations
