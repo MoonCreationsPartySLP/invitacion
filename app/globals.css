@@ -485,6 +485,26 @@
   .animate-fade-in {
     animation: fade-in 0.6s ease-out;
   }
+  
+/*     MY FONTS ADDED      */
+  @font-face {
+    font-family: "TuFuenteLigera";
+    src: url("/fonts/FuenteLigera.ttf") format("truetype");
+    font-weight: 300;
+  }
+  
+  @font-face {
+    font-family: "TuFuenteRegular";
+    src: url("/fonts/FuenteRegular.ttf") format("truetype");
+    font-weight: 400;
+  }
+  
+  @font-face {
+    font-family: "TuFuenteSerif";
+    src: url("/fonts/FuenteSerif.ttf") format("truetype");
+    font-weight: 400;
+  }
+
   /* Added responsive card sizing styles for 1024x2000px dimensions */
   @layer utilities {
     @media (min-width: 768px) {
