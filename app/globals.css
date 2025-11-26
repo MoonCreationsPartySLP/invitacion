@@ -489,19 +489,19 @@
 /*     MY FONTS ADDED      */
   @font-face {
     font-family: "TuFuenteLigera";
-    src: url("/fonts/FuenteLigera.ttf") format("truetype");
+    src: url("/fonts/Coldiac.ttf") format("truetype");
     font-weight: 300;
   }
   
   @font-face {
     font-family: "TuFuenteRegular";
-    src: url("/fonts/FuenteRegular.ttf") format("truetype");
+    src: url("/fonts/CormorantGaramond-Regular.ttf") format("truetype");
     font-weight: 400;
   }
   
   @font-face {
     font-family: "TuFuenteSerif";
-    src: url("/fonts/FuenteSerif.ttf") format("truetype");
+    src: url("/fonts/parisienne-regular.ttf") format("truetype");
     font-weight: 400;
   }
 
