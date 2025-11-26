@@ -261,6 +261,7 @@ export default function WeddingCard() {
                         </p>
                         
                    </div>
+                    
                  <div className="flex flex-col sm:flex-row justify-center gap-16 mt-6">
                   
                     /* Columna 1 - Padres de la novia */
@@ -284,7 +285,7 @@ export default function WeddingCard() {
                     </div>
                   
                   </div>
-
+                  </div>
                   <div className="flex-1 space-y-6 md:space-y-10">
                     <h3 className="text-lg md:text-xl lg:text-2xl font-display font-medium text-stone-700 text-center tracking-[0.2em] uppercase">
                       Locations
