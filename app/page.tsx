@@ -295,7 +295,7 @@ export default function WeddingCard() {
                   <div className="pt-6 md:pt-8" />
                   
                   <Contador />
-                  <div className="flex flex-col sm:flex-row justify-center gap-3 md:gap-6 mt-3 md:mt-4">
+                  <div className="flex flex-col sm:flex-row justify-center gap-3 md:gap-6 mt-3 md:mt-4"></div>
 
                   <div className="pt-6 md:pt-8" />
                     
