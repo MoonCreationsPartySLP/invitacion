@@ -8,9 +8,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        TuFuenteSerif: ["TuFuenteSerif", "serif"],
-        TuFuenteRegular: ["TuFuenteRegular", "sans-serif"],
-        TuFuenteLigera: ["TuFuenteLigera", "sans-serif"],
+        Coldiac: ["Coldiac", "serif"],
+        CormorantGaramond: ["CormorantGaramond", "sans-serif"],
+        Parisienne: ["Parisienne", "sans-serif"],
       },
     },
   },
