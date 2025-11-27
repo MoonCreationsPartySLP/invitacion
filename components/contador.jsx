@@ -39,47 +39,60 @@ export default function Countdown() {
     return () => clearInterval(interval);
   }, []);
 
-  return (
-    <div className="w-full text-center mt-8 space-y-3">
+return (
+  <div className="w-full text-center mt-8 space-y-3">
 
-      {/* Fecha */}
-      <div className="text-sm tracking-widest text-stone-700 font-TuFuenteSerif">
-        JUNIO
+    {/* Fecha */}
+    <div className="text-sm tracking-widest text-stone-700 font-TuFuenteSerif">
+      JUNIO
+    </div>
+
+    {/* Día central */}
+    <div className="text-6xl md:text-7xl font-TuFuenteSerif text-stone-700">
+      27
+    </div>
+
+    {/* Año */}
+    <div className="text-sm tracking-widest text-stone-700 font-TuFuenteSerif">
+      2026
+    </div>
+
+    {/* Subtítulo */}
+    <div className="mt-6 text-stone-600 tracking-[0.3em] font-TuFuenteRegular">
+      FALTAN
+    </div>
+
+    {/* Contador estilizado */}
+    <div className="flex justify-center gap-8 md:gap-12 mb-4 text-stone-700 font-TuFuenteSerif">
+      <div className="text-center">
+        <div className="text-3xl md:text-5xl">{time.days}</div>
+        <div className="text-[10px] md:text-xs tracking-widest text-stone-500 font-TuFuenteRegular">
+          Días
+        </div>
       </div>
 
-      {/* Día central */}
-      <div className="text-6xl md:text-7xl font-TuFuenteSerif text-stone-700">
-        27
+      <div className="text-center">
+        <div className="text-3xl md:text-5xl">{time.hours}</div>
+        <div className="text-[10px] md:text-xs tracking-widest text-stone-500 font-TuFuenteRegular">
+          Horas
+        </div>
       </div>
 
-      {/* Año */}
-      <div className="text-sm tracking-widest text-stone-700 font-TuFuenteSerif">
-        2026
+      <div className="text-center">
+        <div className="text-3xl md:text-5xl">{time.minutes}</div>
+        <div className="text-[10px] md:text-xs tracking-widest text-stone-500 font-TuFuenteRegular">
+          Min
+        </div>
       </div>
 
-      {/* Subtítulo */}
-      <div className="mt-6 text-stone-600 tracking-[0.3em] font-TuFuenteRegular">
-        FALTAN
-      </div>
-
-      {/* Contador */}
-      <div className="flex justify-center gap-2 md:gap-4 text-stone-700 font-TuFuenteSerif">
-        <span className="text-3xl md:text-5xl">{time.days}</span>
-        <span className="text-3xl md:text-5xl">:</span>
-        <span className="text-3xl md:text-5xl">{time.hours}</span>
-        <span className="text-3xl md:text-5xl">:</span>
-        <span className="text-3xl md:text-5xl">{time.minutes}</span>
-        <span className="text-3xl md:text-5xl">:</span>
-        <span className="text-3xl md:text-5xl">{time.seconds}</span>
-      </div>
-
-      {/* Labels */}
-      <div className="flex justify-center gap-6 md:gap-10 text-[10px] md:text-xs tracking-widest text-stone-500 font-TuFuenteRegular">
-        <div>Días</div>
-        <div>Horas</div>
-        <div>Min</div>
-        <div>Seg</div>
+      <div className="text-center">
+        <div className="text-3xl md:text-5xl">{time.seconds}</div>
+        <div className="text-[10px] md:text-xs tracking-widest text-stone-500 font-TuFuenteRegular">
+          Seg
+        </div>
       </div>
     </div>
-  );
+  </div>
+);
+
 }
