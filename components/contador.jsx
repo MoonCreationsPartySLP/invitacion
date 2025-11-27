@@ -38,8 +38,75 @@ export default function Countdown() {
 
     return () => clearInterval(interval);
   }, []);
-
+  
 return (
+  <div className="w-full text-center mt-8 space-y-3">
+
+    {/* Fecha */}
+    <div className="text-sm tracking-widest text-stone-700 font-TuFuenteSerif">
+      JUNIO
+    </div>
+
+    {/* Día central */}
+    <div className="text-6xl md:text-7xl font-TuFuenteSerif text-stone-700">
+      27
+    </div>
+
+    {/* Año */}
+    <div className="text-sm tracking-widest text-stone-700 font-TuFuenteSerif">
+      2026
+    </div>
+
+    {/* Subtítulo */}
+    <div className="mt-6 text-stone-600 tracking-[0.3em] font-TuFuenteRegular">
+      FALTAN
+    </div>
+
+    {/* CONTADOR PREMIUM */}
+    <div className="flex justify-center gap-6 md:gap-10 mb-4">
+
+      {/* Bloque */}
+      {[
+        { value: time.days, label: "Días" },
+        { value: time.hours, label: "Horas" },
+        { value: time.minutes, label: "Min" },
+        { value: time.seconds, label: "Seg" },
+      ].map((item, index) => (
+        <div
+          key={index}
+          className="flex flex-col items-center"
+        >
+          {/* Caja dorada animada */}
+          <div
+            className="
+              w-16 h-16 md:w-20 md:h-20 
+              flex items-center justify-center 
+              bg-white/80 backdrop-blur-sm
+              border border-[#d5c39e]
+              rounded-xl 
+              shadow-sm
+              transition-all duration-300 
+              animate-pulse-[1.2s_ease-in-out_infinite]
+              font-TuFuenteSerif 
+              text-3xl md:text-4xl text-stone-700
+            "
+          >
+            {item.value}
+          </div>
+
+          {/* Etiqueta */}
+          <div className="mt-2 text-[10px] md:text-xs tracking-widest text-stone-500 font-TuFuenteRegular">
+            {item.label}
+          </div>
+        </div>
+      ))}
+
+    </div>
+  </div>
+);
+
+  
+/*return (
   <div className="w-full text-center mt-8 space-y-3">
 
     {/* Fecha */}
@@ -93,6 +160,6 @@ return (
       </div>
     </div>
   </div>
-);
+); */
 
 }
