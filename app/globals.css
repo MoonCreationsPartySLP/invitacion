@@ -486,8 +486,8 @@
     animation: fade-in 0.6s ease-out;
   }
   
-/*     MY FONTS ADDED      */
-  @font-face {
+
+ @font-face {
     font-family: "TuFuenteLigera";
     src: url("/fonts/Coldiac.ttf") format("truetype");
     font-weight: 300;
