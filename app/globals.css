@@ -488,19 +488,19 @@
   
 
  @font-face {
-    font-family: "TuFuenteLigera";
+    font-family: "Coldiac";
     src: url("/fonts/Coldiac.ttf") format("truetype");
     font-weight: 300;
   }
   
   @font-face {
-    font-family: "TuFuenteRegular";
+    font-family: "CormorantGaramond-Regular";
     src: url("/fonts/CormorantGaramond-Regular.ttf") format("truetype");
     font-weight: 400;
   }
   
   @font-face {
-    font-family: "TuFuenteSerif";
+    font-family: "parisienne-regular";
     src: url("/fonts/parisienne-regular.ttf") format("truetype");
     font-weight: 400;
   }
