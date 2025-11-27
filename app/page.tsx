@@ -4,6 +4,8 @@ import { useState, useEffect, useRef } from "react"
 import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { MapPin, Volume2, VolumeX, X, Gift, Mail, CalendarIcon } from "lucide-react"
+import Countdown from "@/components/contador";
+
 
 export default function WeddingCard() {
   const [isFlipped, setIsFlipped] = useState(false)
@@ -292,6 +294,11 @@ export default function WeddingCard() {
 
                   <div className="pt-6 md:pt-8" />
                   
+                  <contador />
+                  <div className="flex flex-col sm:flex-row justify-center gap-3 md:gap-6 mt-3 md:mt-4">
+
+                  <div className="pt-6 md:pt-8" />
+                    
                   <div className="flex-1 space-y-6 md:space-y-10">
                     <h3 className="text-lg md:text-xl lg:text-2xl font-display font-medium text-stone-700 text-center tracking-[0.2em] uppercase">
                       Locations
