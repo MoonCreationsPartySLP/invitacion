@@ -494,13 +494,13 @@
   }
   
   @font-face {
-    font-family: "CormorantGaramond-Regular";
+    font-family: "CormorantGaramond";
     src: url("/fonts/CormorantGaramond-Regular.ttf") format("truetype");
     font-weight: 400;
   }
   
   @font-face {
-    font-family: "parisienne-regular";
+    font-family: "Parisienne";
     src: url("/fonts/parisienne-regular.ttf") format("truetype");
     font-weight: 400;
   }
