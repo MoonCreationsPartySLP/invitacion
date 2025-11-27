@@ -4,7 +4,7 @@ import { useState, useEffect, useRef } from "react"
 import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { MapPin, Volume2, VolumeX, X, Gift, Mail, CalendarIcon } from "lucide-react"
-import Contador from "@/components/Contador";
+import Contador from "@/components/contador";
 
 
 export default function WeddingCard() {
