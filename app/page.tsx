@@ -4,7 +4,7 @@ import { useState, useEffect, useRef } from "react"
 import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { MapPin, Volume2, VolumeX, X, Gift, Mail, CalendarIcon } from "lucide-react"
-import Countdown from "@/components/contador";
+import Countdown from "@/components/Contador";
 
 
 export default function WeddingCard() {
@@ -294,7 +294,7 @@ export default function WeddingCard() {
 
                   <div className="pt-6 md:pt-8" />
                   
-                  <contador />
+                  <Contador />
                   <div className="flex flex-col sm:flex-row justify-center gap-3 md:gap-6 mt-3 md:mt-4">
 
                   <div className="pt-6 md:pt-8" />
