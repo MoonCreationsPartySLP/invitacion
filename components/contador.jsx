@@ -58,7 +58,7 @@ return (
     </div>
 
     {/* Subtítulo */}
-    <div className="mt-6 text-stone-600 tracking-[0.3em] font-parisienne">
+    <div className="mt-6 text-stone-600 tracking-[0.3em] font-antic">
       FALTAN
     </div>
 
