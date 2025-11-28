@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import "./globals.css";
-import { coldiac, cormorant, parisienne } from "@/lib/fonts";
+import "/globals.css";
+import { coldiac, cormorant, parisienne } from "/lib/fonts";
 
 export const metadata: Metadata = {
   title: "Wedding Invitation - Sarah & Michael",
