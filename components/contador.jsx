@@ -43,22 +43,22 @@ return (
   <div className="w-full text-center mt-8 space-y-3">
 
     {/* Fecha */}
-    <div className="text-sm tracking-widest text-stone-700 font-Coldiac">
+    <div className="text-sm tracking-widest text-stone-700 font-coldiac">
       JUNIO
     </div>
 
     {/* Día central */}
-    <div className="text-6xl md:text-7xl font-Coldiac text-stone-700">
+    <div className="text-6xl md:text-7xl font-coldiac text-stone-700">
       27
     </div>
 
     {/* Año */}
-    <div className="text-sm tracking-widest text-stone-700 font-Coldiac">
+    <div className="text-sm tracking-widest text-stone-700 font-coldiac">
       2026
     </div>
 
     {/* Subtítulo */}
-    <div className="mt-6 text-stone-600 tracking-[0.3em] font-Parisienne">
+    <div className="mt-6 text-stone-600 tracking-[0.3em] font-parisienne">
       FALTAN
     </div>
 
@@ -87,7 +87,7 @@ return (
               shadow-sm
               transition-all duration-300 
               animate-pulse-[1.2s_ease-in-out_infinite]
-              font-Coldiac 
+              font-coldiac 
               text-3xl md:text-4xl text-stone-700
             "
           >
@@ -95,7 +95,7 @@ return (
           </div>
 
           {/* Etiqueta */}
-          <div className="mt-2 text-[10px] md:text-xs tracking-widest text-stone-500 font-CormorantGaramond">
+          <div className="mt-2 text-[10px] md:text-xs tracking-widest text-stone-500 font-cormorant">
             {item.label}
           </div>
         </div>
