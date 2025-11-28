@@ -81,6 +81,7 @@
   --font-serif: "Playfair Display", Georgia, serif;
   /* Adding Cormorant Garamond as elegant display font */
   --font-display: "Cormorant Garamond", "Playfair Display", Georgia, serif;
+  --font-antic: "Antic Didone", Georgia, serif;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
