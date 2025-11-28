@@ -2,7 +2,15 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Geist, Geist_Mono, Playfair_Display, Cormorant_Garamond } from "next/font/google"
 import "./globals.css"
-import localFont from 'next/font/local';
+import { coldiac, cormorant, parisienne } from "/lib/fonts";
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang="es" className={`${coldiac.variable} ${cormorant.variable} ${parisienne.variable}`}>
+      <body>{children}</body>
+    </html>
+  )
+}
 
 
 const _geist = Geist({ subsets: ["latin"] })
@@ -14,29 +22,6 @@ const _cormorant = Cormorant_Garamond({
 })
 
 
-export const coldiac = localFont({
-  src: [
-    { path: '/fonts/Coldiac.ttf', weight: '400', style: 'normal' },
-    { path: '/fonts/ColdiacItalic.ttf', weight: '400', style: 'italic' },
-  ],
-  variable: '--font-coldiac',
-  display: 'swap',
-});
-
-export const cormorant = localFont({
-  src: [
-    { path: '/fonts/CormorantGaramondRegular.ttf', weight: '400', style: 'normal' },
-    
-  ],
-  variable: '--font-cormorant',
-  display: 'swap',
-});
-
-export const parisienne = localFont({
-  src: '/fonts/ParisienneRegular.ttf',
-  variable: '--font-parisienne',
-  display: 'swap',
-});
 
 export const metadata: Metadata = {
   title: "Wedding Invitation - Sarah & Michael",
