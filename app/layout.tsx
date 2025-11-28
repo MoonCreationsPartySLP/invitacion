@@ -2,7 +2,7 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Geist, Geist_Mono, Playfair_Display, Cormorant_Garamond } from "next/font/google"
 import "./globals.css"
-import { coldiac, cormorant, parisienne } from "/lib/fonts";
+import { coldiac, cormorant, parisienne } from "./lib/fonts";
 
 export default function RootLayout({ children }) {
   return (
