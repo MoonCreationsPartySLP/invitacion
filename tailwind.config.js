@@ -8,11 +8,12 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        Coldiac: ["Coldiac", "serif"],
-        CormorantGaramond: ["CormorantGaramond", "sans-serif"],
-        Parisienne: ["Parisienne", "sans-serif"],
+        coldiac: ["Coldiac", "serif"],
+        cormorant: ["CormorantGaramond", "serif"],
+        parisienne: ["Parisienne", "cursive"],
+        motterdam: ["Motterdam", "cursive"],
       },
-    },
+    }
   },
   plugins: [],
 };
