@@ -4,15 +4,6 @@ import { Geist, Geist_Mono, Playfair_Display, Cormorant_Garamond } from "next/fo
 import "./globals.css"
 import { coldiac, cormorant, parisienne } from "/lib/fonts";
 
-export default function RootLayout({ children }) {
-  return (
-    <html lang="es" className={`${coldiac.variable} ${cormorant.variable} ${parisienne.variable}`}>
-      <body>{children}</body>
-    </html>
-  )
-}
-
-
 const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 const _playfair = Playfair_Display({ subsets: ["latin"] })
@@ -22,10 +13,9 @@ const _cormorant = Cormorant_Garamond({
 })
 
 
-
 export const metadata: Metadata = {
-  title: "Wedding Invitation - Sarah & Michael",
-  description: "You are invited to celebrate the wedding of Sarah and Michael",
+  title: "Wedding Invitation - Angeles & Eduardo",
+  description: "You are invited to celebrate the wedding of Angeles and Eduardo",
   generator: "v0.app",
   icons: {
     icon: [
