@@ -17,7 +17,7 @@ const _cormorant = Cormorant_Garamond({
 export const coldiac = localFont({
   src: [
     { path: '/fonts/Coldiac.ttf', weight: '400', style: 'normal' },
-    { path: '/fonts/Coldiac-Italic.ttf', weight: '400', style: 'italic' },
+    { path: '/fonts/ColdiacItalic.ttf', weight: '400', style: 'italic' },
   ],
   variable: '--font-coldiac',
   display: 'swap',
@@ -25,7 +25,7 @@ export const coldiac = localFont({
 
 export const cormorant = localFont({
   src: [
-    { path: '/fonts/CormorantGaramond-Regular.ttf', weight: '400', style: 'normal' },
+    { path: '/fonts/CormorantGaramondRegular.ttf', weight: '400', style: 'normal' },
     
   ],
   variable: '--font-cormorant',
@@ -33,7 +33,7 @@ export const cormorant = localFont({
 });
 
 export const parisienne = localFont({
-  src: '/fonts/parisienne-regular.ttf',
+  src: '/fonts/ParisienneRegular.ttf',
   variable: '--font-parisienne',
   display: 'swap',
 });
