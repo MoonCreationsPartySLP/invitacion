@@ -10,7 +10,10 @@ const _cormorant = Cormorant_Garamond({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
 })
-const _anticDidone = Antic_Didone({ subsets: ["latin"] })
+const anticDidone = Antic_Didone({
+  weight: "400",        
+  subsets: ["latin"],
+})
 
 export const metadata: Metadata = {
   title: "Wedding Invitation - Sarah & Michael",
