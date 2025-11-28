@@ -2,6 +2,8 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Geist, Geist_Mono, Playfair_Display, Cormorant_Garamond } from "next/font/google"
 import "./globals.css"
+import localFont from 'next/font/local';
+
 
 const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
@@ -10,6 +12,31 @@ const _cormorant = Cormorant_Garamond({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
 })
+
+
+export const coldiac = localFont({
+  src: [
+    { path: '/fonts/Coldiac.ttf', weight: '400', style: 'normal' },
+    { path: '/fonts/Coldiac-Italic.ttf', weight: '400', style: 'italic' },
+  ],
+  variable: '--font-coldiac',
+  display: 'swap',
+});
+
+export const cormorant = localFont({
+  src: [
+    { path: '/fonts/CormorantGaramond-Regular.ttf', weight: '400', style: 'normal' },
+    
+  ],
+  variable: '--font-cormorant',
+  display: 'swap',
+});
+
+export const parisienne = localFont({
+  src: '/fonts/parisienne-regular.ttf',
+  variable: '--font-parisienne',
+  display: 'swap',
+});
 
 export const metadata: Metadata = {
   title: "Wedding Invitation - Sarah & Michael",
