@@ -186,7 +186,7 @@ export default function WeddingCard() {
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  d="M0 160 Q300 0 600 120 T1200 160"
+                  d="M 0,0 L 400,0 L 400,90 Q 375,80 350,80 Q 325,80 300,90 Q 275,100 250,110 Q 225,120 200,120 Q 175,120 150,110 Q 125,100 100,90 Q 75,80 50,80 Q 25,80 0,90 Z"
                   stroke="#D4AF37"
                   strokeWidth="11"
                   strokeLinecap="round"
