@@ -177,22 +177,20 @@ export default function WeddingCard() {
               <div className="envelope-ornament-center" />
 
               <div className="envelope-frame" />
-              <div 
-              className="absolute left-1/2 transform -translate-x-1/2"
-              style={{ top: "5%",
-                      zIndex: 50 
-                    }}>
-              <img
-                src="/imagennames.png"    
-                alt="Postal image"
-                style={{
-                  width: "700px",
-                  height: "200px",
-                  objectFit: "contain",
-                }}
-                className="rounded-sm"
-              />
-            </div>
+              
+             <div className="absolute left-1/2 transform -translate-x-1/2 z-50 top-[12%] sm:top-[8%] md:top-[2%]">
+                <img
+                  src="/imagennames.png"
+                  alt="Postal image"
+                  className="
+                    rounded-sm 
+                    w-[260px]            /* móvil */
+                    sm:w-[420px]         /* tablet */
+                    md:w-[700px]         /* desktop */
+                    h-auto
+                    object-contain"/>
+              </div>
+
               /*<div className="envelope-address">
                 <p className="calligraphy-text"></p>
               </div>*/
