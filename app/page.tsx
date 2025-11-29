@@ -179,7 +179,7 @@ export default function WeddingCard() {
               <div className="envelope-frame" />
               <div 
               className="absolute left-1/2 transform -translate-x-1/2"
-              style={{ top: "80%",
+              style={{ top: "20%",
                       zIndex: 50 
                     }}>
               <img
