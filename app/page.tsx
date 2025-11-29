@@ -177,21 +177,6 @@ export default function WeddingCard() {
               <div className="envelope-ornament-center" />
 
               <div className="envelope-frame" />
-
-              <svg
-                className="absolute left-1/2 transform -translate-x-1/2 z-40"
-                style={{ top: "26%", width: "88%", height: "60px" }}
-                viewBox="0 0 1200 200"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M 0,0 L 800,0 L 800,180 Q 750,160 700,160 Q 650,160 600,180 Q 550,200 500,220 Q 450,240 400,240 Q 350,240 300,220 Q 250,200 200,180 Q 150,160 100,160 Q 50,160 0,180 Z"
-                  stroke="#D4AF37"
-                  strokeWidth="11"
-                  strokeLinecap="round"
-                />
-              </svg>
               
              <div className="absolute left-1/2 transform -translate-x-1/2 z-50 top-[12%] sm:top-[8%] md:top-[2%]">
                 <img
