@@ -44,7 +44,7 @@ export default function Countdown() {
 
     {/* FECHA SUPERIOR */}
     <div
-      className="text-xs sm:text-sm tracking-[0.35em] font-light uppercase opacity-0 fade-in-up"
+      className="text-xs sm:text-sm tracking-[0.35em] font-display uppercase opacity-0 fade-in-up"
       style={{ animationDelay: "0.2s" }}
     >
       27 de junio 2026
@@ -75,7 +75,7 @@ export default function Countdown() {
               text-4xl
               sm:text-5xl
               md:text-6xl
-              font-light
+              font-display
               gold-glow
               gold-shimmer
             "
@@ -91,7 +91,7 @@ export default function Countdown() {
               sm:text-[10px]
               md:text-xs
               tracking-[0.25em]
-              font-light
+              font-display
               uppercase
             "
           >
