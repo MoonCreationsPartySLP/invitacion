@@ -273,7 +273,7 @@
   .envelope-frame {
     position: absolute;
     inset: 25px;
-    border: 1.5px solid rgba(201, 169, 97, 0.25);
+    border: none;/*1.5px solid rgba(201, 169, 97, 0.25);*/
     border-radius: 2px;
     z-index: 4;
     pointer-events: none;
