@@ -38,71 +38,77 @@ export default function Countdown() {
 
     return () => clearInterval(interval);
   }, []);
-  
-return (
-  <div className="w-full text-center mt-8 space-y-3">
 
-    {/* Fecha */}
-    <div className="text-sm tracking-widest text-stone-700 font-coldiac">
-      JUNIO
+ return (
+  <div className="w-full text-center mt-10 space-y-6 text-white fade-in-up">
+
+    {/* FECHA SUPERIOR */}
+    <div
+      className="text-xs sm:text-sm tracking-[0.35em] font-light uppercase opacity-0 fade-in-up"
+      style={{ animationDelay: "0.2s" }}
+    >
+      27 de junio 2026
     </div>
 
-    {/* Día central */}
-    <div className="text-6xl md:text-7xl font-coldiac text-stone-700">
-      27
-    </div>
+    {/* LÍNEA SUPERIOR */}
+    <div
+      className="w-[85%] sm:w-[60%] md:w-[45%] mx-auto border-t border-white/30 opacity-0 fade-in-up"
+      style={{ animationDelay: "0.35s" }}
+    ></div>
 
-    {/* Año */}
-    <div className="text-sm tracking-widest text-stone-700 font-coldiac">
-      2026
-    </div>
-
-    {/* Subtítulo */}
-    <div className="mt-6 text-stone-400 tracking-[0.3em] font-antic">
-      FALTAN
-    </div>
-
-    {/* CONTADOR PREMIUM */}
-    <div className="flex justify-center gap-6 md:gap-10 mb-4">
-
-      {/* Bloque */}
+    {/* CONTADOR */}
+    <div className="flex justify-center gap-5 sm:gap-10 md:gap-12 text-center pt-1">
       {[
-        { value: time.days, label: "Días" },
-        { value: time.hours, label: "Horas" },
+        { value: time.days, label: "Día" },
+        { value: time.hours, label: "Hrs" },
         { value: time.minutes, label: "Min" },
         { value: time.seconds, label: "Seg" },
       ].map((item, index) => (
         <div
           key={index}
-          className="flex flex-col items-center"
+          className="flex flex-col items-center opacity-0 fade-in-scale"
+          style={{ animationDelay: `${0.45 + index * 0.15}s` }}
         >
-          {/* Caja dorada animada */}
+          {/* NÚMERO CON GLOW + SHIMMER */}
           <div
             className="
-              w-16 h-16 md:w-20 md:h-20 
-              flex items-center justify-center 
-              bg-white/80 backdrop-blur-sm
-              border border-[#d5c39e]
-              rounded-xl 
-              shadow-sm
-              transition-all duration-300 
-              animate-pulse-[1.2s_ease-in-out_infinite]
-              font-coldiac 
-              text-3xl md:text-4xl text-stone-700
+              text-4xl
+              sm:text-5xl
+              md:text-6xl
+              font-light
+              gold-glow
+              gold-shimmer
             "
           >
             {item.value}
           </div>
 
-          {/* Etiqueta */}
-          <div className="mt-2 text-[10px] md:text-xs tracking-widest text-stone-500 font-cormorant">
+          {/* ETIQUETA */}
+          <div
+            className="
+              mt-1
+              text-[9px]
+              sm:text-[10px]
+              md:text-xs
+              tracking-[0.25em]
+              font-light
+              uppercase
+            "
+          >
             {item.label}
           </div>
         </div>
       ))}
-
     </div>
+
+    {/* LÍNEA INFERIOR */}
+    <div
+      className="w-[85%] sm:w-[60%] md:w-[45%] mx-auto border-t border-white/30 opacity-0 fade-in-up"
+      style={{ animationDelay: "1.2s" }}
+    ></div>
   </div>
 );
+
+
 
 }
