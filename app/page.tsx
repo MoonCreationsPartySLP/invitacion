@@ -187,20 +187,20 @@ export default function WeddingCard() {
                 <p className="calligraphy-text"></p>
               </div>*/
 
-              <div className="envelope-flap transition-none">
-                <button onClick={handleOpenEnvelope} className="envelope-button absolute left-1/2 transform -translate-x-1/2 z-50 top-[62%] sm:top-[58%] md:top-[42%]" aria-label="Open envelope">
-                    <img
-                      src="/sello.png"
-                      alt="Open"
-                      className="
-                        object-contain
-                        pointer-events-none
-                        w-14 h-14
-                        sm:w-20 sm:h-20
-                        md:w-24 md:h-24"
-                    />
-                  </button>
-               </div>
+              <div className="envelope-flap transition-none"/>
+              <button onClick={handleOpenEnvelope} className="envelope-button absolute left-1/2 transform -translate-x-1/2 z-50 top-[82%] sm:top-[68%] md:top-[52%]" aria-label="Open envelope">
+                  <img
+                    src="/sello.png"
+                    alt="Open"
+                    className="
+                      object-contain
+                      pointer-events-none
+                      w-14 h-14
+                      sm:w-20 sm:h-20
+                      md:w-24 md:h-24"
+                  />
+                </button>
+               
   
               {!envelopeOpened && (
                 <div className="absolute -bottom-12 md:-bottom-16 left-1/2 transform -translate-x-1/2 text-center">
