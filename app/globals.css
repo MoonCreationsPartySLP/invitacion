@@ -385,18 +385,19 @@
 
   /* Updated circular button with transparent background support for seal */
   .envelope-button {
-  position: absolute;
-  top: 65%;       /* <— AQUI BAJAS O SUBES */
-  left: 50%;
-  transform: translateX(-50%);
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  overflow: hidden;
-  z-index: 20;
-  cursor: pointer;
-  background: transparent;
-}
+    position: absolute;
+    top: 65%;       /* <— AQUI BAJAS O SUBES */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: 20;
+    cursor: pointer;
+    background: transparent;
+    transform-origin: center;
+  }
 
   /* Movil */
 @media (max-width: 640px) {
