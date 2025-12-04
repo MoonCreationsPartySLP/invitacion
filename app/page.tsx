@@ -188,9 +188,20 @@ export default function WeddingCard() {
               </div>*/
 
               <div className="envelope-flap" />
+              
               <button onClick={handleOpenEnvelope} className="envelope-button" aria-label="Open envelope">
-                <img src="/sello.png" alt="Open" className="w-full h-full object-contain" />
+                <img
+                  src="/sello.png"
+                  alt="Open"
+                  className="
+                    object-contain
+                    w-12 h-12
+                    sm:w-16 sm:h-16
+                    md:w-20 md:h-20"
+                />
               </button>
+
+              
               {!envelopeOpened && (
                 <div className="absolute -bottom-12 md:-bottom-16 left-1/2 transform -translate-x-1/2 text-center">
                   <p className="text-xs md:text-sm text-stone-600 font-light animate-pulse">Click to open</p>
