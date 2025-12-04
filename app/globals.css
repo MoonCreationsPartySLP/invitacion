@@ -426,12 +426,11 @@
 }
 
   .envelope-button:hover {
-    transform: translate(-50%, -50%) scale(1.08);
-    box-shadow: none;
+    transform: translateX(-50%) scale(1.08);
   }
 
   .envelope-button:active {
-    transform: translate(-50%, -50%) scale(1.02);
+    transform: translateX(-50%) scale(1.02);
   }
 
   .envelope-container.opened .envelope-button {
