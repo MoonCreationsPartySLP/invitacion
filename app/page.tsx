@@ -194,6 +194,7 @@ export default function WeddingCard() {
                       alt="Open"
                       className="
                         object-contain
+                        pointer-events-none
                         w-14 h-14
                         sm:w-20 sm:h-20
                         md:w-24 md:h-24"
