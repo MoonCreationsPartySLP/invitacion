@@ -40,7 +40,7 @@ export default function Countdown() {
   }, []);
 
  return (
-  <div className="w-full text-center mt-10 space-y-6 text-white fade-in-up">
+  <div className="w-full text-center mt-10 space-y-6 text-black fade-in-up">
 
     {/* FECHA SUPERIOR */}
     <div
@@ -52,7 +52,7 @@ export default function Countdown() {
 
     {/* LÍNEA SUPERIOR */}
     <div
-      className="w-[85%] sm:w-[60%] md:w-[45%] mx-auto border-t border-white/30 opacity-0 fade-in-up"
+      className="w-[85%] sm:w-[60%] md:w-[45%] mx-auto border-t border-black/30 opacity-0 fade-in-up"
       style={{ animationDelay: "0.35s" }}
     ></div>
 
@@ -103,12 +103,10 @@ export default function Countdown() {
 
     {/* LÍNEA INFERIOR */}
     <div
-      className="w-[85%] sm:w-[60%] md:w-[45%] mx-auto border-t border-white/30 opacity-0 fade-in-up"
+      className="w-[85%] sm:w-[60%] md:w-[45%] mx-auto border-t border-black/30 opacity-0 fade-in-up"
       style={{ animationDelay: "1.2s" }}
     ></div>
   </div>
 );
-
-
 
 }
