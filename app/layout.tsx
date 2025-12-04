@@ -1,6 +1,6 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Geist, Geist_Mono, Playfair_Display, Cormorant_Garamond, Antic_Didone, Bona_Nova_SC} from "next/font/google"
+import { Geist, Geist_Mono, Playfair_Display, Cormorant_Garamond, Antic_Didone, Bona_Nova_SC, Unna} from "next/font/google"
 import "./globals.css"
 
 const _geist = Geist({ subsets: ["latin"] })
@@ -18,6 +18,12 @@ const bonaNova = Bona_Nova_SC({
   subsets: ["latin"],
   weight: ["400", "700"], 
   style: ["normal", "italic"],
+});
+const unna = Unna({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  style: ["normal", "italic"],
+  variable: "--font-unna",
 });
 
 export const metadata: Metadata = {
