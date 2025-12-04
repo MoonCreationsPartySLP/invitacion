@@ -1,6 +1,6 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Geist, Geist_Mono, Playfair_Display, Cormorant_Garamond, Antic_Didone } from "next/font/google"
+import { Geist, Geist_Mono, Playfair_Display, Cormorant_Garamond, Antic_Didone, Bona_Nova_SC} from "next/font/google"
 import "./globals.css"
 
 const _geist = Geist({ subsets: ["latin"] })
@@ -14,6 +14,11 @@ const anticDidone = Antic_Didone({
   weight: "400",        
   subsets: ["latin"],
 })
+const bonaNova = Bona_Nova_SC({
+  subsets: ["latin"],
+  weight: ["400", "700"], 
+  style: ["normal", "italic"],
+});
 
 export const metadata: Metadata = {
   title: "Wedding Invitation - Sarah & Michael",
