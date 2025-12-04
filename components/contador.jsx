@@ -59,7 +59,7 @@ export default function Countdown() {
     {/* CONTADOR */}
     <div className="flex justify-center gap-5 sm:gap-10 md:gap-12 text-center pt-1">
       {[
-        { value: time.days, label: "Día" },
+        { value: time.days, label: "Días" },
         { value: time.hours, label: "Hrs" },
         { value: time.minutes, label: "Min" },
         { value: time.seconds, label: "Seg" },
