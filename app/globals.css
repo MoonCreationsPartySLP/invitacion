@@ -386,9 +386,6 @@
   /* Updated circular button with transparent background support for seal */
   .envelope-button {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -396,11 +393,10 @@
     z-index: 20;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: none;
-    border: none;
     background: transparent;
     padding: 0;
   }
+
 
   @media (max-width: 768px) {
     .envelope-button {
