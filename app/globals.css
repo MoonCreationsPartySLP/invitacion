@@ -350,7 +350,7 @@
       inset 0 -15px 30px rgba(0, 0, 0, 0.12),
       inset 0 2px 8px rgba(255, 255, 255, 0.4);
     /* Increased border thickness from 3px to 5px and made golden color more vibrant */
-    border: /*none;*/ 3px solid rgba(218, 165, 32, 0.95);
+    border: none; /*3px solid rgba(218, 165, 32, 0.95);*/
     border-top: none;
     /* Subtle paper texture - opaque */
     background-image: repeating-linear-gradient(
