@@ -74,7 +74,7 @@ export default function Countdown() {
               sm:text-5xl
               md:text-6xl
               font-bona
-              gold-glow
+              
               gold-shimmer
             "
           >
