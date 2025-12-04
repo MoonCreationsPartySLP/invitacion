@@ -385,26 +385,45 @@
 
   /* Updated circular button with transparent background support for seal */
   .envelope-button {
-    position: absolute;
+  position: absolute;
+  top: 65%;       /* <— AQUI BAJAS O SUBES */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 20;
+  cursor: pointer;
+  background: transparent;
+}
+
+  /* Movil */
+@media (max-width: 640px) {
+  .envelope-button {
+    top: 68%;           /* Ajusta según dónde quieras el sello */
+    width: 75px;        /* Tamaño en móvil */
+    height: 75px;
+  }
+}
+
+/* Tablets */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .envelope-button {
+    top: 66%;
+    width: 110px;
+    height: 110px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1025px) {
+  .envelope-button {
+    top: 65%;           /* Ajuste refinado en pantallas grandes */
     width: 150px;
     height: 150px;
-    border-radius: 50%;
-    overflow: hidden;
-    z-index: 20;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    background: transparent;
-    padding: 0;
   }
-
-
-  @media (max-width: 768px) {
-    .envelope-button {
-      width: 110px;
-      height: 110px;
-      padding: 0;
-    }
-  }
+}
 
   .envelope-button:hover {
     transform: translate(-50%, -50%) scale(1.08);
