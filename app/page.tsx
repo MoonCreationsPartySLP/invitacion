@@ -195,9 +195,9 @@ export default function WeddingCard() {
                   alt="Open"
                   className="
                     object-contain
-                    w-12 h-12
-                    sm:w-16 sm:h-16
-                    md:w-20 md:h-20"
+                    w-17 h-17
+                    sm:w-21 sm:h-21
+                    md:w-25 md:h-25"
                 />
               </button>
 
