@@ -188,7 +188,7 @@ export default function WeddingCard() {
               </div>*/
 
               <div className="envelope-flap transition-none"/>
-              <button onClick={handleOpenEnvelope} className="envelope-button aria-label="Open envelope">
+              <button onClick={handleOpenEnvelope} className="envelope-button">
                   <img
                     src="/sello.png"
                     alt="Open"
