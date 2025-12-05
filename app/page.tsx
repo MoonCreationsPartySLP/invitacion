@@ -188,7 +188,7 @@ export default function WeddingCard() {
               </div>*/
 
               <div className="envelope-flap transition-none"/>
-              <button onClick={handleOpenEnvelope} className="envelope-button absolute left-1/2 transform translate-x-[-3px] z-50 top-[38%] sm:top-[32%] md:top-[35%]" aria-label="Open envelope">
+              <button onClick={handleOpenEnvelope} className="envelope-button absolute left-1/2 transform -translate-x-[10px] z-50 top-[38%] sm:top-[32%] md:top-[35%]" aria-label="Open envelope">
                   <img
                     src="/sello.png"
                     alt="Open"
