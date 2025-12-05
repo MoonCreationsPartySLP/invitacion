@@ -165,8 +165,8 @@
     background: linear-gradient(135deg, #e8dfd2 0%, #d9cfc2 50%, #ccc2b5 100%);
     border-radius: 5px;
     box-shadow:
-      /*0 25px 60px rgba(80, 60, 40, 0.4),
-      0 12px 30px rgba(80, 60, 40, 0.3),*/
+      0 25px 60px rgba(80, 60, 40, 0.4),
+      0 12px 30px rgba(80, 60, 40, 0.3),
       0 4px 12px rgba(0, 0, 0, 0.2),
       inset 0 2px 8px rgba(255, 255, 255, 0.5),
       inset 0 -2px 8px rgba(0, 0, 0, 0.1);
@@ -345,8 +345,8 @@
     transition: transform 1.4s cubic-bezier(0.34, 1.56, 0.64, 1);
     z-index: 10;
     box-shadow:
-      /*0 20px 50px rgba(80, 60, 40, 0.45),
-      0 10px 25px rgba(80, 60, 40, 0.35),*/
+      /*0 20px 50px rgba(80, 60, 40, 0.45),*/
+      0 10px 25px rgba(80, 60, 40, 0.35),
       inset 0 -15px 30px rgba(0, 0, 0, 0.12),
       inset 0 2px 8px rgba(255, 255, 255, 0.4);
     /* Increased border thickness from 3px to 5px and made golden color more vibrant */
