@@ -389,8 +389,8 @@
     top: 35%;       /* <— AQUI BAJAS O SUBES */
     left: 50%;
     transform: translateX(-20%);
-    width: 150px;
-    height: 150px;
+    width: 160px;
+    height: 160px;
     border-radius: 50%;
     overflow: hidden;
     z-index: 20;
@@ -403,8 +403,8 @@
 @media (max-width: 640px) {
   .envelope-button {
     top: 38%;           /* Ajusta según dónde quieras el sello */
-    width: 75px;        /* Tamaño en móvil */
-    height: 75px;
+    width: 80px;        /* Tamaño en móvil */
+    height: 80px;
   }
 }
 
@@ -412,8 +412,8 @@
 @media (min-width: 641px) and (max-width: 1024px) {
   .envelope-button {
     top: 35%;
-    width: 110px;
-    height: 110px;
+    width: 120px;
+    height: 120px;
   }
 }
 
@@ -421,8 +421,8 @@
 @media (min-width: 1025px) {
   .envelope-button {
     top: 35%;           /* Ajuste refinado en pantallas grandes */
-    width: 150px;
-    height: 150px;
+    width: 160px;
+    height: 160px;
   }
 }
 
