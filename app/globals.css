@@ -426,13 +426,13 @@
   }
 }
 
-  .envelope-button:hover {
-    transform: translateX(-50%) scale(1.08);
-  }
+.envelope-button:hover {
+  transform: translateX(-20%) scale(1.08);
+}
 
-  .envelope-button:active {
-    transform: translateX(-50%) scale(1.02);
-  }
+.envelope-button:active {
+  transform: translateX(-20%) scale(1.02);
+}
 
   .envelope-container.opened .envelope-button {
     opacity: 0;
