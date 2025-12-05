@@ -420,7 +420,7 @@
 /* Desktop */
 @media (min-width: 1025px) {
   .envelope-button {
-    top: 75%;           /* Ajuste refinado en pantallas grandes */
+    top: 35%;           /* Ajuste refinado en pantallas grandes */
     width: 150px;
     height: 150px;
   }
