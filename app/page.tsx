@@ -195,9 +195,9 @@ export default function WeddingCard() {
                     className="
                       object-contain
                       pointer-events-none
-                      w-14 h-14
-                      sm:w-20 sm:h-20
-                      md:w-24 md:h-24"
+                      w-20 h-20
+                      sm:w-24 sm:h-24
+                      md:w-26 md:h-26"
                   />
                 </button>
                
