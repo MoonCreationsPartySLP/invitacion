@@ -1,0 +1,91 @@
+/* [next]/internal/font/google/unna_6cffe391.module.css [app-client] (css) */
+@font-face {
+  font-family: Unna;
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../media/92980592fc7981cb-s.986c89b3.woff2") format("woff2");
+  unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: Unna;
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../media/d77f666e4141493f-s.p.b8ee31fe.woff2") format("woff2");
+  unicode-range: U+??, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: Unna;
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../media/139f65aa6a1068d1-s.aa771f89.woff2") format("woff2");
+  unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: Unna;
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../media/9c6ab24f3e5fdb61-s.p.41132fa8.woff2") format("woff2");
+  unicode-range: U+??, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: Unna;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../media/b8630397e0bf5ac6-s.7510ca69.woff2") format("woff2");
+  unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: Unna;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../media/a9ea9ad630487a2c-s.p.434f5de3.woff2") format("woff2");
+  unicode-range: U+??, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: Unna;
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../media/ccea3dd17f3ebdda-s.13f16ee7.woff2") format("woff2");
+  unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: Unna;
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../media/0255eb7af02910bd-s.p.1a1cea12.woff2") format("woff2");
+  unicode-range: U+??, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: Unna Fallback;
+  src: local(Times New Roman);
+  ascent-override: 89.23%;
+  descent-override: 27.18%;
+  line-gap-override: 0.0%;
+  size-adjust: 98.95%;
+}
+
+.unna_6cffe391-module__PPnAIa__className {
+  font-family: Unna, Unna Fallback;
+}
+
+.unna_6cffe391-module__PPnAIa__variable {
+  --font-unna: "Unna", "Unna Fallback";
+}
+
+/*# sourceMappingURL=%5Bnext%5D_internal_font_google_unna_6cffe391_module_css_bad6b30c._.single.css.map*/
