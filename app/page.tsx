@@ -85,7 +85,7 @@ export default function WeddingCard() {
 
       const element = document.createElement("div")
       element.style.width = "800px"
-      element.style.padding = "20px"
+      element.style.padding = "40px"
       element.style.backgroundColor = "white"
 
       element.innerHTML = `
@@ -103,7 +103,7 @@ export default function WeddingCard() {
       `
 
       const opt = {
-        margin: 0.5,
+        margin: 0.1,
         filename: "wedding-invitation.pdf",
         image: { type: "jpeg", quality: 0.98 },
         html2canvas: { scale: 2, useCORS: true, logging: false },
