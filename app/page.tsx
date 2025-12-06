@@ -90,14 +90,14 @@ export default function WeddingCard() {
 
       element.innerHTML = `
         <div style="text-align: center; font-family: 'Cormorant Garamond', serif;">
-          <img src="/wedding1.png" alt="Wedding Invitation" style="width: 100%; max-width: 600px; margin-bottom: 40px;" crossorigin="anonymous" />
-          <h1 style="color: #8B7355; font-size: 32px; margin-bottom: 20px; letter-spacing: 0.2em;">WEDDING DETAILS</h1>
+          <img src="/wedding1.png" alt="Invitación Boda A&E" style="width: 100%; max-width: 600px; margin-bottom: 40px;" crossorigin="anonymous" />
+          <h1 style="color: #8B7355; font-size: 32px; margin-bottom: 20px; letter-spacing: 0.2em;">Nuestra Boda Angeles & Eduardo</h1>
           <div style="text-align: left; max-width: 500px; margin: 0 auto; line-height: 1.8; font-size: 16px;">
             <h2 style="color: #5C4A3A; margin-top: 30px; text-align: center; letter-spacing: 0.15em;">LOCATIONS</h2>
-            <h3 style="margin-top: 20px; text-align: center; font-weight: 600;">Ceremony</h3>
-            <p style="text-align: center;">St Joseph Catholic Church<br/>600 S Jupiter Rd Richardson, TX 75081<br/>Saturday, August 2, 2025<br/>Mass 1:30PM</p>
-            <h3 style="margin-top: 20px; text-align: center; font-weight: 600;">Reception</h3>
-            <p style="text-align: center;">The Delanie Venue<br/>10230 County Road 202 Forney, Tx 75126<br/>5:00 PM Saturday, August 2, 2025</p>
+            <h3 style="margin-top: 20px; text-align: center; font-weight: 600;">Ceremonia Religiosa</h3>
+            <p style="text-align: center;">Parroquia Nuestra Señora de La Candelaria<br/>Plaza Julián Carrillo 3, 78450 Ahualulco del Sonido 13, S.L.P.<br/>Sábado 26 de Junio del 2026<br/>Hora: 3:00PM</p>
+            <h3 style="margin-top: 20px; text-align: center; font-weight: 600;">Recepción</h3>
+            <p style="text-align: center;">Jardín La Noria<br/>C. Comité de los 13 Pro J.Carrillo 35, Centro, 78450 Ahualulco del Sonido 13, S.L.P.<br/> Apartir de las 5:00 PM </p>
           </div>
         </div>
       `
@@ -107,7 +107,7 @@ export default function WeddingCard() {
         filename: "wedding-invitation.pdf",
         image: { type: "jpeg", quality: 0.98 },
         html2canvas: { scale: 2, useCORS: true, logging: false },
-        jsPDF: { unit: "in", format: "letter", orientation: "portrait" },
+        jsPDF: { unit: "in", format: "letter", orientation: "portrait" }, 
       }
 
       await html2pdf().set(opt).from(element).save()
@@ -303,7 +303,7 @@ export default function WeddingCard() {
                     
                   <div className="flex-1 space-y-6 md:space-y-10">
                     <h3 className="text-lg md:text-xl lg:text-2xl font-display font-medium text-stone-700 text-center tracking-[0.2em] uppercase">
-                      Locations
+                    
                     </h3>
 
                     <div className="space-y-3 md:space-y-4">
@@ -312,10 +312,10 @@ export default function WeddingCard() {
                       </h4>
                       <div className="text-center space-y-1 md:space-y-2">
                         <p className="text-sm md:text-base lg:text-lg font-display font-medium text-stone-700">
-                          Parroquia de Nuestra señora de la Candelaria 
+                          Parroquia de Nuestra Señora de la Candelaria 
                         </p>
                         <p className="text-sm md:text-base lg:text-lg font-display text-stone-600">
-                          Ahualulco SLP
+                          Plaza Julián Carrillo 3, CP.78450, Ahualulco del Sonido 13, S.L.P.
                         </p>
                         <p className="text-sm md:text-base lg:text-lg font-display text-stone-600">
                           15:00 hrs
@@ -418,7 +418,7 @@ export default function WeddingCard() {
                         }}
                       >
                         <Gift className="w-4 h-4 md:w-5 md:h-5 mr-2" />
-                        Send A Gift Card
+                        Mesa de Regalos 
                       </Button>
                     </div>
                   </div>
@@ -432,7 +432,7 @@ export default function WeddingCard() {
                       }}
                     >
                       <Mail className="w-4 h-4 md:w-5 md:h-5 mr-2" />
-                      SEND MESSAGE
+                      Confirma tu Asistencia
                     </Button>
                     <Button
                       variant="outline"
@@ -443,10 +443,10 @@ export default function WeddingCard() {
                       }}
                       disabled={isGeneratingPDF}
                     >
-                      {isGeneratingPDF ? "Generating PDF..." : "Download PDF"}
+                      {isGeneratingPDF ? "Generating PDF..." : "Descargar Invitación"}
                     </Button>
                     <p className="text-xs md:text-sm lg:text-base text-center text-stone-500 italic mt-2 md:mt-3 font-display">
-                      Tap to return
+                      Toca para Voltear
                     </p>
                   </div>
                 </div>
@@ -454,7 +454,7 @@ export default function WeddingCard() {
             </div>
           </div>
           <p className="text-center text-sm md:text-base text-stone-600 mt-4 md:mt-6">
-            Click the card to flip and view details
+            ¡Da Clic sobre la tarjeta para ver los Detalles!
           </p>
         </div>
       )}
