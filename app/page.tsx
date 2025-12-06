@@ -259,7 +259,7 @@ export default function WeddingCard() {
                   
                   <div className="space-y-3 md:space-y-4">
                       <div className="text-center space-y-1 md:space-y-2">
-                        <p className="text-sm md:text-base lg:text-lg font-display font-medium text-stone-700">
+                        <p className="text-sm md:text-base lg:text-xl font-display font-medium text-stone-700">
                           Cada momento juntos nos ha llevado a este día tan especial. Junto a nuestros padres, tenemos el honor de invitarte a celebrar nuestra boda y compartir con nosotros la felicidad de comenzar una nueva etapa en nuestras vidas.
                         </p>
                         
@@ -267,25 +267,25 @@ export default function WeddingCard() {
                     
                  <div className="flex flex-col sm:flex-row justify-center gap-16 mt-6">
                     <div className="text-center space-y-2">
-                      <h4 className="font-display font-semibold text-stone-800 text-lg md:text-xl lg:text-2xl tracking-wide">
+                      <h4 className="font-display font-semibold text-stone-800 text-lg md:text-xl lg:text-3xl tracking-wide">
                         Padres de la novia
                       </h4>
-                      <p className="text-sm md:text-base lg:text-lg font-display text-stone-600">
+                      <p className="text-sm md:text-base lg:text-xl font-display text-stone-600">
                         Marcelina Vázquez y
                       </p>
-                       <p className="text-sm md:text-base lg:text-lg font-display text-stone-600">
+                       <p className="text-sm md:text-base lg:text-xl font-display text-stone-600">
                         Luis Zapata
                       </p>
                     </div>
           
                     <div className="text-center space-y-2">
-                      <h4 className="font-display font-semibold text-stone-800 text-lg md:text-xl lg:text-2xl tracking-wide">
+                      <h4 className="font-display font-semibold text-stone-800 text-lg md:text-xl lg:text-3xl tracking-wide">
                         Padres del novio
                       </h4>
-                      <p className="text-sm md:text-base lg:text-lg font-display text-stone-600">
+                      <p className="text-sm md:text-base lg:text-xl font-display text-stone-600">
                         Irene Torres y
                       </p>
-                      <p className="text-sm md:text-base lg:text-lg font-display text-stone-600">
+                      <p className="text-sm md:text-base lg:text-xl font-display text-stone-600">
                         Eduardo Contreras 
                       </p>
                     </div>
@@ -296,6 +296,7 @@ export default function WeddingCard() {
                   <div className="pt-6 md:pt-8" />
                   
                   <Contador />
+                  
                   <div className="flex flex-col sm:flex-row justify-center gap-3 md:gap-6 mt-3 md:mt-4"></div>
 
                   <div className="pt-6 md:pt-8" />
@@ -307,20 +308,20 @@ export default function WeddingCard() {
 
                     <div className="space-y-3 md:space-y-4">
                       <h4 className="font-display font-semibold text-stone-800 text-center text-lg md:text-xl lg:text-2xl tracking-wide">
-                        Ceremony
+                        Ceremonia Religiosa
                       </h4>
                       <div className="text-center space-y-1 md:space-y-2">
                         <p className="text-sm md:text-base lg:text-lg font-display font-medium text-stone-700">
-                          St Joseph Catholic Church
+                          Parroquia de Nuestra señora de la Candelaria 
                         </p>
                         <p className="text-sm md:text-base lg:text-lg font-display text-stone-600">
-                          600 S Jupiter Rd Richardson, TX 75081
+                          Ahualulco SLP
                         </p>
                         <p className="text-sm md:text-base lg:text-lg font-display text-stone-600">
-                          Saturday, August 2, 2025
+                          15:00 hrs
                         </p>
-                        <p className="text-sm md:text-base lg:text-lg font-display text-stone-600">Mass</p>
-                        <p className="text-sm md:text-base lg:text-lg font-display text-stone-600">1:30PM</p>
+                        <p className="text-sm md:text-base lg:text-lg font-display text-stone-600"></p>
+                        <p className="text-sm md:text-base lg:text-lg font-display text-stone-600"></p>
                       </div>
                       
                       <div className="flex flex-col sm:flex-row justify-center gap-3 md:gap-6 mt-3 md:mt-4">
@@ -329,11 +330,11 @@ export default function WeddingCard() {
                           className="text-[#8B7355] hover:text-[#6B5335] p-0 h-auto text-sm md:text-base lg:text-lg font-display"
                           onClick={(e) => {
                             e.stopPropagation()
-                            window.open("https://maps.google.com/?q=St+Joseph+Catholic+Church+Richardson+TX", "_blank")
+                            window.open("https://maps.app.goo.gl/Zy33LV52gPrW4xFz7", "_blank")
                           }}
                         >
                           <MapPin className="w-4 h-4 md:w-5 md:h-5 mr-2" />
-                          View Map
+                          Ver Ubicación
                         </Button>
                         <Button
                           variant="link"
@@ -341,34 +342,37 @@ export default function WeddingCard() {
                           onClick={(e) => {
                             e.stopPropagation()
                             const calendarUrl = createGoogleCalendarUrl({
-                              title: "Wedding Ceremony - Sterling & Harper",
-                              location: "St Joseph Catholic Church, 600 S Jupiter Rd Richardson, TX 75081",
-                              details: "Wedding Mass Ceremony",
-                              startDate: "20250802T133000",
-                              endDate: "20250802T143000",
+                              title: "Ceremonia Religiosa - Boda Angeles & Eduardo",
+                              location: "Parroquia Nuestra Señora de La Candelaria, Plaza Julián Carrillo 3, 78450 Ahualulco del Sonido 13, S.L.P.",
+                              details: "Ceremonia Religiosa Boda Angeles y Eduardo",
+                              startDate: "20260627T150000-0600",
+                              endDate: "20260627T160000-0600",
                             })
                             window.open(calendarUrl, "_blank")
                           }}
                         >
                           <CalendarIcon className="w-4 h-4 md:w-5 md:h-5 mr-2" />
-                          Add to calendar
+                          Agendar en mi Calendario
                         </Button>
                       </div>
                     </div>
 
                     <div className="space-y-3 md:space-y-4">
                       <h4 className="font-display font-semibold text-stone-800 text-center text-lg md:text-xl lg:text-2xl tracking-wide">
-                        Reception
+                        Recepción
                       </h4>
                       <div className="text-center space-y-1 md:space-y-2">
                         <p className="text-sm md:text-base lg:text-lg font-display font-medium text-stone-700">
-                          The Delanie Venue
+                          Jardín de Eventos La Noria
                         </p>
                         <p className="text-sm md:text-base lg:text-lg font-display text-stone-600">
-                          10230 County Road 202 Forney, Tx 75126
+                          Calle Comité de los 13 Pro J.Carrillo 35, 
                         </p>
                         <p className="text-sm md:text-base lg:text-lg font-display text-stone-600">
-                          5:00 PM Saturday, August 2, 2025
+                          Centro, 78450 Ahualulco del Sonido 13, S.L.P.
+                        </p>
+                         <p className="text-sm md:text-base lg:text-lg font-display text-stone-600">
+                          17:00 hrs
                         </p>
                       </div>
 
@@ -378,11 +382,11 @@ export default function WeddingCard() {
                           className="text-[#8B7355] hover:text-[#6B5335] p-0 h-auto text-sm md:text-base lg:text-lg font-display"
                           onClick={(e) => {
                             e.stopPropagation()
-                            window.open("https://maps.google.com/?q=The+Delanie+Venue+Forney+TX", "_blank")
+                            window.open("https://maps.app.goo.gl/Kv6aFtLzxcxdEZ6X8", "_blank")
                           }}
                         >
                           <MapPin className="w-4 h-4 md:w-5 md:h-5 mr-2" />
-                          View Map
+                          Ver Ubicación
                         </Button>
                         <Button
                           variant="link"
@@ -390,17 +394,17 @@ export default function WeddingCard() {
                           onClick={(e) => {
                             e.stopPropagation()
                             const calendarUrl = createGoogleCalendarUrl({
-                              title: "Wedding Reception - Sterling & Harper",
-                              location: "The Delanie Venue, 10230 County Road 202 Forney, TX 75126",
-                              details: "Wedding Reception",
-                              startDate: "20250802T170000",
-                              endDate: "20250802T230000",
+                              title: "Recepción - Boda Angeles & Eduardo",
+                              location: "Jardín La Noria, C. Comité de los 13 Pro J.Carrillo 35, Centro, 78450 Ahualulco del Sonido 13, S.L.P.",
+                              details: "Recepción de la Boda de Angeles y Eduardo",
+                              startDate: "20260627T170000-0600",
+                              endDate: "20260628T040000-0600"
                             })
                             window.open(calendarUrl, "_blank")
                           }}
                         >
                           <CalendarIcon className="w-4 h-4 md:w-5 md:h-5 mr-2" />
-                          Add to calendar
+                          Agendar en mi Calendario
                         </Button>
                       </div>
                     </div>
