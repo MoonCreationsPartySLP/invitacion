@@ -386,7 +386,7 @@
   /* Updated circular button with transparent background support for seal */
   .envelope-button {
     position: absolute;
-    top: 35%;       /* <— AQUI BAJAS O SUBES */
+    top: 36%;       /* <— AQUI BAJAS O SUBES */
     left: 50%;
     transform: translateX(-20%);
     width: 160px;
