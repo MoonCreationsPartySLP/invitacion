@@ -196,7 +196,7 @@ export default function WeddingCard() {
                       object-contain
                       pointer-events-none
                       w-20 h-20
-                      sm:w-24 sm:h-24
+                      sm:w-20 sm:h-20
                       md:w-26 md:h-26"
                   />
                 </button>
