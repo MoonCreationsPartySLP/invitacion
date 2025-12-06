@@ -27,8 +27,8 @@ const unna = Unna({
 });
 
 export const metadata: Metadata = {
-  title: "Wedding Invitation - Sarah & Michael",
-  description: "You are invited to celebrate the wedding of Sarah and Michael",
+  title: "Wedding Invitation - Angeles & Eduardo",
+  description: "You are invited to celebrate the wedding of Angeles and Eduardo",
   generator: "v0.app",
   icons: {
     icon: [
