@@ -85,7 +85,7 @@ export default function WeddingCard() {
 
       const element = document.createElement("div")
       element.style.width = "800px"
-      element.style.padding = "40px"
+      element.style.padding = "20px"
       element.style.backgroundColor = "white"
 
       element.innerHTML = `
@@ -107,7 +107,7 @@ export default function WeddingCard() {
         filename: "wedding-invitation.pdf",
         image: { type: "jpeg", quality: 0.98 },
         html2canvas: { scale: 2, useCORS: true, logging: false },
-        jsPDF: { unit: "in", format: "letter", orientation: "portrait" }, 
+        jsPDF: { unit: "in", format: "A3", orientation: "portrait" }, 
       }
 
       await html2pdf().set(opt).from(element).save()
