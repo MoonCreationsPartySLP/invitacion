@@ -91,6 +91,9 @@ export default function WeddingCard() {
       element.innerHTML = `
         <div style="text-align: center; font-family: 'Cormorant Garamond', serif;">
           <img src="/wedding1.png" alt="Invitación Boda A&E" style="width: 100%; max-width: 600px; margin-bottom: 40px; align: center;" crossorigin="anonymous" />
+           <div style="text-align: left; max-width: 500px; margin: 0 auto; line-height: 1.8; font-size: 16px;">
+            
+          </div>
           <h1 style="color: #8B7355; font-size: 32px; margin-bottom: 20px; letter-spacing: 0.2em;">Nuestra Boda <br/> Angeles & Eduardo</h1>
           <div style="text-align: left; max-width: 500px; margin: 0 auto; line-height: 1.8; font-size: 16px;">
             <h2 style="color: #5C4A3A; margin-top: 30px; text-align: center; letter-spacing: 0.15em;">LOCATIONS</h2>
