@@ -41,70 +41,58 @@ export default function Countdown() {
 
  return (
   <div className="w-full text-center mt-10 space-y-6 text-black fade-in-up">
-
-    {/* FECHA PRINCIPAL – FONDO BLANCO */}
-<div className="w-full flex flex-col items-center text-[#8B7355] space-y-3 fade-in-up">
+    {/* FECHA PIXEL PERFECT – REFERENCIA */}
+<div className="w-full flex flex-col items-center text-[#8B7355]">
 
   {/* MES */}
   <div
     className="
       font-unna
-      text-xs
-      sm:text-sm
-      tracking-[0.35em]
+      text-[11px]
+      tracking-[0.45em]
       uppercase
-      opacity-0 fade-in-up
+      mb-1
     "
-    style={{ animationDelay: "0.15s" }}
   >
     Junio
   </div>
 
-  {/* DÍA GRANDE CON LÍNEAS */}
-  <div
-    className="
-      relative
-      flex
-      items-center
-      w-full
-      max-w-md
-      opacity-0 fade-in-up
-    "
-    style={{ animationDelay: "0.25s" }}
-  >
-    <div className="absolute inset-x-0 top-1/2 border-t border-[#8B7355]/40"></div>
+  {/* DÍA CON LÍNEAS */}
+  <div className="flex items-center w-full max-w-[360px]">
 
+    {/* línea izquierda */}
+    <div className="flex-1 border-t border-[#8B7355]/45"></div>
+
+    {/* número */}
     <div
       className="
-        relative
-        mx-auto
         px-4
         font-greatv
-        text-5xl
-        sm:text-6xl
-        md:text-7xl
-        leading-none
+        text-[64px]
+        leading-[0.9]
+        -mt-[6px]
       "
     >
       27
     </div>
+
+    {/* línea derecha */}
+    <div className="flex-1 border-t border-[#8B7355]/45"></div>
   </div>
 
   {/* DÍA + AÑO */}
   <div
     className="
+      mt-[2px]
       flex
       w-full
-      max-w-md
+      max-w-[360px]
       justify-between
       font-unna
-      text-xs
-      sm:text-sm
-      tracking-[0.25em]
+      text-[11px]
+      tracking-[0.45em]
       uppercase
-      opacity-0 fade-in-up
     "
-    style={{ animationDelay: "0.35s" }}
   >
     <span>Sábado</span>
     <span>2026</span>
@@ -112,7 +100,6 @@ export default function Countdown() {
 
 </div>
 
-    
   <div className="pt-3 md:pt-8" />
     <div className="space-y-3 md:space-y-4">
       <div className="text-center space-y-1 md:space-y-2">
