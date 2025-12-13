@@ -439,16 +439,13 @@ export default function WeddingCard() {
                     </div>
 
                     <div className="border-t border-stone-300 pt-6 md:pt-8">
-                      <Button
+                      /*<Button
                         variant="outline"
                         className="w-full border-[#8B7355] text-[#8B7355] hover:bg-[#8B7355] hover:text-white bg-transparent font-display font-medium tracking-wide text-sm md:text-base lg:text-lg py-4 md:py-6"
-                        onClick={(e) => {
-                          e.stopPropagation()
-                        }}
-                      >
+                        onClick={(e) => {e.stopPropagation()}}>
                         <Gift className="w-4 h-4 md:w-5 md:h-5 mr-2" />
                         Mesa de Regalos 
-                      </Button>
+                      </Button>*/
                     </div>
                   </div>
 
@@ -457,8 +454,8 @@ export default function WeddingCard() {
                       className="w-full bg-[#8B7355] hover:bg-[#6B5335] text-white font-display font-medium tracking-widest text-sm md:text-base lg:text-lg py-4 md:py-6"
                       size="lg"
                       onClick={(e) => {
-                        e.stopPropagation()
-                      }}
+                            e.stopPropagation()
+                            window.open("https://wa.link/6drmce", "_blank")}}
                     >
                       <Mail className="w-4 h-4 md:w-5 md:h-5 mr-2" />
                       Confirma tu Asistencia
