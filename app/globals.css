@@ -84,6 +84,7 @@
   --font-antic: "Antic Didone", Georgia, serif;
   --font-bona: "Bona Nova SC", Georgia, serif;
   --font-unna: "Unna", Georgia, serif;
+  --font-greatv: "Great Vives", "Geist Mono";
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
