@@ -41,64 +41,71 @@ export default function Countdown() {
 
  return (
   <div className="w-full text-center mt-10 space-y-6 text-black fade-in-up">
-    {/* FECHA PIXEL PERFECT – REFERENCIA */}
+    {/* FECHA EXACTA ESTILO REFERENCIA */}
 <div className="w-full flex flex-col items-center text-[#8B7355]">
 
   {/* MES */}
   <div
     className="
       font-unna
-      text-[11px]
+      text-[12px]
       tracking-[0.45em]
       uppercase
-      mb-1
+      mb-2
     "
   >
     Junio
   </div>
 
-  {/* DÍA CON LÍNEAS */}
-  <div className="flex items-center w-full max-w-[360px]">
+  {/* FILA CENTRAL */}
+  <div className="flex items-center w-full max-w-[520px]">
 
-    {/* línea izquierda */}
-    <div className="flex-1 border-t border-[#8B7355]/45"></div>
+    {/* IZQUIERDA */}
+    <div className="flex items-center gap-3 flex-1">
+      <div className="w-12 border-t border-[#8B7355]/50"></div>
+      <span
+        className="
+          font-unna
+          text-[11px]
+          tracking-[0.35em]
+          uppercase
+        "
+      >
+        Sábado
+      </span>
+    </div>
 
-    {/* número */}
+    {/* NÚMERO */}
     <div
       className="
-        px-4
+        mx-6
         font-greatv
         text-[64px]
-        leading-[0.9]
-        -mt-[6px]
+        leading-none
+        -mt-[4px]
       "
     >
       27
     </div>
 
-    {/* línea derecha */}
-    <div className="flex-1 border-t border-[#8B7355]/45"></div>
-  </div>
+    {/* DERECHA */}
+    <div className="flex items-center gap-3 flex-1 justify-end">
+      <span
+        className="
+          font-unna
+          text-[11px]
+          tracking-[0.35em]
+          uppercase
+        "
+      >
+        2026
+      </span>
+      <div className="w-12 border-t border-[#8B7355]/50"></div>
+    </div>
 
-  {/* DÍA + AÑO */}
-  <div
-    className="
-      mt-[2px]
-      flex
-      w-full
-      max-w-[360px]
-      justify-between
-      font-unna
-      text-[11px]
-      tracking-[0.45em]
-      uppercase
-    "
-  >
-    <span>Sábado</span>
-    <span>2026</span>
   </div>
-
 </div>
+
 
   <div className="pt-3 md:pt-8" />
     <div className="space-y-3 md:space-y-4">
