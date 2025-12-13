@@ -318,6 +318,13 @@ export default function WeddingCard() {
                     </h3>
 
                     <div className="space-y-3 md:space-y-4">
+                      <img src="/icons/iglesia.png" alt="Ceremonia Religiosa" className="
+                        w-6 h-6
+                        sm:w-8 sm:h-8
+                        md:w-10 md:h-10
+                        lg:w-12 lg:h-12
+                        opacity-80"
+                      />
                       <h4 className="font-display font-semibold text-stone-800 text-center text-lg md:text-xl lg:text-2xl tracking-wide">
                         Ceremonia Religiosa
                       </h4>
@@ -369,6 +376,13 @@ export default function WeddingCard() {
                     </div>
 
                     <div className="space-y-3 md:space-y-4">
+                      <img src="/icons/recepcion.png" alt="Recepcion" className="
+                        w-6 h-6
+                        sm:w-8 sm:h-8
+                        md:w-10 md:h-10
+                        lg:w-12 lg:h-12
+                        opacity-80"
+                      />
                       <h4 className="font-display font-semibold text-stone-800 text-center text-lg md:text-xl lg:text-2xl tracking-wide">
                         Recepción
                       </h4>
