@@ -263,11 +263,12 @@ export default function WeddingCard() {
                   <div className="space-y-3 md:space-y-4">
                       <div className="text-center space-y-1 md:space-y-2">
                         <p className="text-sm md:text-base lg:text-xl font-display font-medium text-stone-700">
-                          Cada momento juntos nos ha llevado a este día tan especial. Junto a nuestros padres, tenemos el honor de invitarte a celebrar nuestra boda y <br/> compartir con nosotros la felicidad de comenzar una nueva etapa en nuestras vidas.
+                          Cada momento juntos nos ha llevado a este día tan especial. Junto a nuestros padres, tenemos el honor de invitarte a celebrar nuestra boda y <br/> 
+                          compartir con nosotros la felicidad de comenzar una nueva etapa en nuestras vidas.
                         </p>
-                        
-                   </div>
-                    
+                     </div>
+                  </div> 
+                  
                  <div className="flex flex-col sm:flex-row justify-center gap-16 mt-6">
                     <div className="text-center space-y-2">
                       <h4 className="font-display font-semibold text-stone-800 text-lg md:text-xl lg:text-3xl tracking-wide uppercase">
@@ -292,11 +293,19 @@ export default function WeddingCard() {
                         Eduardo Contreras 
                       </p>
                     </div>
+                  </div>
                   
-                  </div>
-                  </div>
 
                   <div className="pt-6 md:pt-8" />
+
+                  <div className="space-y-3 md:space-y-4">
+                      <div className="text-center space-y-1 md:space-y-2">
+                        <p className="text-sm md:text-base lg:text-xl font-bona text-stone-700">
+                          ¡Falta Poco!
+                        </p>
+                     </div>
+                  </div> 
+
                   
                   <Contador />
                   
