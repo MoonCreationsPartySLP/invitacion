@@ -43,15 +43,15 @@ export default function Countdown() {
   <div className="w-full text-center mt-10 space-y-6 text-black fade-in-up">
 
     {/* FECHA SUPERIOR */}
-   <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-unna font-ligth uppercase opacity-0 fade-in-up"
+   <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-greatv font-ligth uppercase opacity-0 fade-in-up"
     style={{ animationDelay: "0.2s" }}>
     27 de junio 2026
   </div>
     
-  <div className="pt-6 md:pt-8" />
+  <div className="pt-3 md:pt-8" />
     <div className="space-y-3 md:space-y-4">
       <div className="text-center space-y-1 md:space-y-2">
-        <p className="text-sm md:text-xl lg:text-2xl font-bona text-stone-700">
+        <p className="text-sm md:text-xl lg:text-2xl font-unna text-stone-700">
           ¡Falta Poco!
         </p>
       </div>
