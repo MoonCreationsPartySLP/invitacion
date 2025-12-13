@@ -263,7 +263,7 @@ export default function WeddingCard() {
                   <div className="space-y-3 md:space-y-4">
                       <div className="text-center space-y-1 md:space-y-2">
                         <p className="text-sm md:text-base lg:text-xl font-display font-medium text-stone-700">
-                          Cada momento juntos nos ha llevado a este día tan especial. Junto a nuestros padres, tenemos el honor de invitarte a celebrar nuestra boda y <br/> 
+                          Cada momento juntos nos ha llevado a este día tan especial. Junto a nuestros padres, tenemos el honor de invitarte a celebrar nuestra boda y
                           compartir con nosotros la felicidad de comenzar una nueva etapa en nuestras vidas.
                         </p>
                      </div>
@@ -271,7 +271,7 @@ export default function WeddingCard() {
                   
                  <div className="flex flex-col sm:flex-row justify-center gap-16 mt-6">
                     <div className="text-center space-y-2">
-                      <h4 className="font-display font-semibold text-stone-800 text-lg md:text-xl lg:text-3xl tracking-wide uppercase">
+                      <h4 className="font-display font-semibold text-stone-800 text-base md:text-lg lg:text-xl tracking-wide uppercase">
                         Padres de la novia
                       </h4>
                       <p className="text-sm md:text-base lg:text-xl font-display text-stone-600">
@@ -283,7 +283,7 @@ export default function WeddingCard() {
                     </div>
           
                     <div className="text-center space-y-2">
-                      <h4 className="font-display font-semibold text-stone-800 text-lg md:text-xl lg:text-3xl tracking-wide uppercase">
+                      <h4 className="font-display font-semibold text-stone-800 text-base md:text-lg lg:text-xl tracking-wide uppercase">
                         Padres del novio
                       </h4>
                       <p className="text-sm md:text-base lg:text-xl font-display text-stone-600">
