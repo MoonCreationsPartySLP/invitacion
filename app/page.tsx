@@ -254,7 +254,7 @@ export default function WeddingCard() {
                 }}
               >
                 <div className="h-full flex flex-col p-6 md:p-8 lg:p-12 overflow-y-auto">
-                  <h2 className="text-3xl md:text-4xl lg:text-5xl font-greatv text-[#8B7355] text-center mb-6 md:mb-8">
+                  <h2 className="text-4xl md:text-5xl lg:text-6xl font-greatv text-[#8B7355] text-center mb-6 md:mb-8">
                     Nuestra Boda
                   </h2>
 
@@ -327,7 +327,7 @@ export default function WeddingCard() {
                           opacity-80"
                         />
                       </div>
-                      <h4 className="font-display font-semibold text-stone-800 text-center text-lg md:text-xl lg:text-2xl tracking-wide">
+                      <h4 className="font-greatv text-stone-800 text-center text-lg md:text-xl lg:text-2xl tracking-wide">
                         Ceremonia Religiosa
                       </h4>
                       <div className="text-center space-y-1 md:space-y-2">
@@ -387,7 +387,7 @@ export default function WeddingCard() {
                           opacity-80"
                         />
                       </div>
-                      <h4 className="font-display font-semibold text-stone-800 text-center text-lg md:text-xl lg:text-2xl tracking-wide">
+                      <h4 className="font-greatv text-stone-800 text-center text-lg md:text-xl lg:text-2xl tracking-wide">
                         Recepción
                       </h4>
                       <div className="text-center space-y-1 md:space-y-2">
