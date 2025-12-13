@@ -47,6 +47,15 @@ export default function Countdown() {
     style={{ animationDelay: "0.2s" }}>
     27 de junio 2026
   </div>
+    
+  <div className="pt-6 md:pt-8" />
+    <div className="space-y-3 md:space-y-4">
+      <div className="text-center space-y-1 md:space-y-2">
+        <p className="text-sm md:text-xl lg:text-2xl font-bona text-stone-700">
+          ¡Falta Poco!
+        </p>
+      </div>
+    </div> 
 
     {/* LÍNEA SUPERIOR */}
     <div
