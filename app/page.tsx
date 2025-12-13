@@ -294,6 +294,17 @@ export default function WeddingCard() {
                       </p>
                     </div>
                   </div>
+                  <div className="text-center space-y-2">
+                      <h4 className="font-display font-semibold text-stone-800 text-base md:text-lg lg:text-xl tracking-wide uppercase">
+                        Padrinos de Velación
+                      </h4>
+                      <p className="text-sm md:text-base lg:text-xl font-display text-stone-600">
+                        Marcelina Vázquez y
+                      </p>
+                       <p className="text-sm md:text-base lg:text-xl font-display text-stone-600">
+                        Luis Zapata
+                      </p>
+                    </div>
                                 
                   <Contador />
                   
