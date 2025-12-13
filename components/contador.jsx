@@ -41,17 +41,22 @@ export default function Countdown() {
 
  return (
   <div className="w-full text-center mt-10 space-y-6 text-black fade-in-up">
-   {/* BLOQUE FECHA – REFERENCIA EXACTA */}
+   {/* BLOQUE FECHA – REFERENCIA EXACTA · RESPONSIVE */}
 <div className="w-full flex flex-col items-center text-[#8B7355]">
 
   {/* MES */}
   <div
     className="
       font-unna
-      text-[12px]
-      tracking-[0.45em]
       uppercase
+      tracking-[0.45em]
       mb-2
+
+      text-[11px]
+      sm:text-xs
+      md:text-sm
+      lg:text-base
+      xl:text-lg
     "
   >
     Junio
@@ -60,35 +65,65 @@ export default function Countdown() {
   {/* FILA CENTRAL */}
   <div className="flex items-center w-full max-w-[520px]">
 
-  {/* BLOQUE IZQUIERDO */}
-  <div className="flex flex-col items-center flex-[0.8] gap-1">
-    <div className="w-14 border-t border-[#8B7355]/45"></div>
-    <span className="font-unna text-[11px] tracking-[0.35em] uppercase">
-      Sábado
-    </span>
-    <div className="w-14 border-t border-[#8B7355]/45"></div>
-  </div>
+    {/* BLOQUE IZQUIERDO */}
+    <div className="flex flex-col items-center flex-[0.8] gap-1">
+      <div className="w-12 sm:w-14 md:w-16 border-t border-[#8B7355]/45"></div>
+      <span
+        className="
+          font-unna
+          uppercase
+          tracking-[0.35em]
+          text-[20px]
+          sm:text-[21px]
+          md:text-lg
+          lg:text-xl
+          xl:text-2xl
+        "
+      >
+        Sábado
+      </span>
+      <div className="w-12 sm:w-14 md:w-16 border-t border-[#8B7355]/45"></div>
+    </div>
 
-  {/* NÚMERO */}
-  <div className="mx-4 font-greatv text-[64px] leading-none -mt-[4px]">
-    27
-  </div>
+    {/* NÚMERO CENTRAL */}
+    <div
+      className="
+        mx-3 sm:mx-4 md:mx-5
+        font-greatv
+        leading-none
+        -mt-[4px]
+        text-[48px]
+        sm:text-[56px]
+        md:text-[64px]
+        lg:text-[72px]
+        xl:text-[84px]
+      "
+    >
+      27
+    </div>
 
-  {/* BLOQUE DERECHO */}
-  <div className="flex flex-col items-center flex-[0.8] gap-1">
-    <div className="w-14 border-t border-[#8B7355]/45"></div>
-    <span className="font-unna text-[11px] tracking-[0.35em] uppercase">
-      2026
-    </span>
-    <div className="w-14 border-t border-[#8B7355]/45"></div>
-  </div>
+    {/* BLOQUE DERECHO */}
+    <div className="flex flex-col items-center flex-[0.8] gap-1">
+      <div className="w-12 sm:w-14 md:w-16 border-t border-[#8B7355]/45"></div>
+      <span
+        className="
+          font-unna
+          uppercase
+          tracking-[0.35em]
+          text-[20px]
+          sm:text-[21px]
+          md:text-lg
+          lg:text-xl
+          xl:text-2xl
+        "
+      >
+        2026
+      </span>
+      <div className="w-12 sm:w-14 md:w-16 border-t border-[#8B7355]/45"></div>
+    </div>
 
+  </div>
 </div>
-  </div>
-</div>
-
-
-
 
   <div className="pt-3 md:pt-8" />
     <div className="space-y-3 md:space-y-4">
