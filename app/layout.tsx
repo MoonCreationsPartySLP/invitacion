@@ -1,6 +1,6 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Geist, Geist_Mono, Playfair_Display, Cormorant_Garamond, Antic_Didone, Bona_Nova_SC, Unna} from "next/font/google"
+import { Geist, Geist_Mono, Playfair_Display, Cormorant_Garamond, Antic_Didone, Bona_Nova_SC, Unna, Cardo} from "next/font/google"
 import "./globals.css"
 
 const _geist = Geist({ subsets: ["latin"] })
@@ -25,6 +25,13 @@ const unna = Unna({
   style: ["normal", "italic"],
   variable: "--font-unna",
 });
+const cardo = Cardo({
+  subsets: ["latin"],
+  weight: ["400", "700"],   // regular + bold
+  style: ["normal", "italic"], // incluye cursiva
+  variable: "--font-cardo",
+});
+
 
 export const metadata: Metadata = {
   title: "Wedding Invitation - Angeles & Eduardo",
