@@ -51,8 +51,7 @@ export default function Countdown() {
       uppercase
       tracking-[0.45em]
       mb-2
-
-      text-[11px]
+      text-[20px]
       sm:text-xs
       md:text-sm
       lg:text-base
@@ -67,7 +66,7 @@ export default function Countdown() {
 
     {/* BLOQUE IZQUIERDO */}
     <div className="flex flex-col items-center flex-[0.8] gap-1">
-      <div className="w-12 sm:w-14 md:w-16 border-t border-[#8B7355]/45"></div>
+      <div className="w-22 sm:w-24 md:w-26 border-t border-[#8B7355]/45"></div>
       <span
         className="
           font-unna
@@ -82,7 +81,7 @@ export default function Countdown() {
       >
         Sábado
       </span>
-      <div className="w-12 sm:w-14 md:w-16 border-t border-[#8B7355]/45"></div>
+      <div className="w-22 sm:w-24 md:w-26 border-t border-[#8B7355]/45"></div>
     </div>
 
     {/* NÚMERO CENTRAL */}
@@ -91,7 +90,7 @@ export default function Countdown() {
         mx-3 sm:mx-4 md:mx-5
         font-greatv
         leading-none
-        -mt-[4px]
+        -mt-[2px]
         text-[48px]
         sm:text-[56px]
         md:text-[64px]
@@ -104,7 +103,7 @@ export default function Countdown() {
 
     {/* BLOQUE DERECHO */}
     <div className="flex flex-col items-center flex-[0.8] gap-1">
-      <div className="w-12 sm:w-14 md:w-16 border-t border-[#8B7355]/45"></div>
+      <div className="w-22 sm:w-24 md:w-26 border-t border-[#8B7355]/45"></div>
       <span
         className="
           font-unna
@@ -119,7 +118,7 @@ export default function Countdown() {
       >
         2026
       </span>
-      <div className="w-12 sm:w-14 md:w-16 border-t border-[#8B7355]/45"></div>
+      <div className="w-22 sm:w-24 md:w-26 border-t border-[#8B7355]/45"></div>
     </div>
 
   </div>
