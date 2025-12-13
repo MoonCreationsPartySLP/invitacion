@@ -258,7 +258,7 @@ export default function WeddingCard() {
                     Nuestra Boda
                   </h2>
 
-                  <div className="border-t border-transparent pt-6 md:pt-8" />
+                  <div className="border-t border-transparent pt-3 md:pt-4" />
                   
                   <div className="space-y-3 md:space-y-4">
                       <div className="text-center space-y-1 md:space-y-2">
