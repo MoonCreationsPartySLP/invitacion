@@ -294,19 +294,7 @@ export default function WeddingCard() {
                       </p>
                     </div>
                   </div>
-                  
-
-                  <div className="pt-6 md:pt-8" />
-
-                  <div className="space-y-3 md:space-y-4">
-                      <div className="text-center space-y-1 md:space-y-2">
-                        <p className="text-sm md:text-base lg:text-xl font-bona text-stone-700">
-                          ¡Falta Poco!
-                        </p>
-                     </div>
-                  </div> 
-
-                  
+                                
                   <Contador />
                   
                   <div className="flex flex-col sm:flex-row justify-center gap-3 md:gap-6 mt-3 md:mt-4"></div>
