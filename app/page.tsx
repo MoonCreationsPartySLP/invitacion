@@ -294,7 +294,7 @@ export default function WeddingCard() {
                       </p>
                     </div>
                   </div>
-                  <div className="text-center space-y-2">
+                  <div className="text-center space-y-5">
                       <h4 className="font-display font-semibold text-stone-800 text-base md:text-lg lg:text-xl tracking-wide uppercase">
                         Padrinos de Velación
                       </h4>
