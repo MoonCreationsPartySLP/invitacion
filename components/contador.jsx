@@ -126,8 +126,8 @@ export default function Countdown() {
     
     <div className="space-y-3 md:space-y-4">
       <div className="text-center space-y-1 md:space-y-2">
-        <p className="text-sm md:text-xl lg:text-2xl font-unna text-stone-700">
-          ¡Falta Poco!
+        <p className="text-sm md:text-xl lg:text-2xl font-unna text-stone-700 uppercase">
+          Faltan
         </p>
       </div>
     </div> 
