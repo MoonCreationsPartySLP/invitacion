@@ -42,11 +42,76 @@ export default function Countdown() {
  return (
   <div className="w-full text-center mt-10 space-y-6 text-black fade-in-up">
 
-    {/* FECHA SUPERIOR */}
-   <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-greatv font-ligth uppercase opacity-0 fade-in-up"
-    style={{ animationDelay: "0.2s" }}>
-    27 de junio 2026
+    {/* FECHA PRINCIPAL – FONDO BLANCO */}
+<div className="w-full flex flex-col items-center text-[#8B7355] space-y-3 fade-in-up">
+
+  {/* MES */}
+  <div
+    className="
+      font-unna
+      text-xs
+      sm:text-sm
+      tracking-[0.35em]
+      uppercase
+      opacity-0 fade-in-up
+    "
+    style={{ animationDelay: "0.15s" }}
+  >
+    Junio
   </div>
+
+  {/* DÍA GRANDE CON LÍNEAS */}
+  <div
+    className="
+      relative
+      flex
+      items-center
+      w-full
+      max-w-md
+      opacity-0 fade-in-up
+    "
+    style={{ animationDelay: "0.25s" }}
+  >
+    <div className="absolute inset-x-0 top-1/2 border-t border-[#8B7355]/40"></div>
+
+    <div
+      className="
+        relative
+        mx-auto
+        px-4
+        font-greatv
+        text-5xl
+        sm:text-6xl
+        md:text-7xl
+        leading-none
+      "
+    >
+      27
+    </div>
+  </div>
+
+  {/* DÍA + AÑO */}
+  <div
+    className="
+      flex
+      w-full
+      max-w-md
+      justify-between
+      font-unna
+      text-xs
+      sm:text-sm
+      tracking-[0.25em]
+      uppercase
+      opacity-0 fade-in-up
+    "
+    style={{ animationDelay: "0.35s" }}
+  >
+    <span>Sábado</span>
+    <span>2026</span>
+  </div>
+
+</div>
+
     
   <div className="pt-3 md:pt-8" />
     <div className="space-y-3 md:space-y-4">
