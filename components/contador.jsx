@@ -60,51 +60,30 @@ export default function Countdown() {
   {/* FILA CENTRAL */}
   <div className="flex items-center w-full max-w-[520px]">
 
-    {/* BLOQUE IZQUIERDO */}
-    <div className="flex flex-col items-center flex-1 gap-1">
-      <div className="w-20 border-t border-[#8B7355]/45"></div>
-      <span
-        className="
-          font-unna
-          text-[11px]
-          tracking-[0.35em]
-          uppercase
-        "
-      >
-        Sábado
-      </span>
-      <div className="w-20 border-t border-[#8B7355]/45"></div>
-    </div>
+  {/* BLOQUE IZQUIERDO */}
+  <div className="flex flex-col items-center flex-[0.8] gap-1">
+    <div className="w-14 border-t border-[#8B7355]/45"></div>
+    <span className="font-unna text-[11px] tracking-[0.35em] uppercase">
+      Sábado
+    </span>
+    <div className="w-14 border-t border-[#8B7355]/45"></div>
+  </div>
 
-    {/* NÚMERO CENTRAL */}
-    <div
-      className="
-        mx-8
-        font-greatv
-        text-[64px]
-        leading-none
-        -mt-[4px]
-      "
-    >
-      27
-    </div>
+  {/* NÚMERO */}
+  <div className="mx-4 font-greatv text-[64px] leading-none -mt-[4px]">
+    27
+  </div>
 
-    {/* BLOQUE DERECHO */}
-    <div className="flex flex-col items-center flex-1 gap-1">
-      <div className="w-20 border-t border-[#8B7355]/45"></div>
-      <span
-        className="
-          font-unna
-          text-[11px]
-          tracking-[0.35em]
-          uppercase
-        "
-      >
-        2026
-      </span>
-      <div className="w-20 border-t border-[#8B7355]/45"></div>
-    </div>
+  {/* BLOQUE DERECHO */}
+  <div className="flex flex-col items-center flex-[0.8] gap-1">
+    <div className="w-14 border-t border-[#8B7355]/45"></div>
+    <span className="font-unna text-[11px] tracking-[0.35em] uppercase">
+      2026
+    </span>
+    <div className="w-14 border-t border-[#8B7355]/45"></div>
+  </div>
 
+</div>
   </div>
 </div>
 
