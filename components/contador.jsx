@@ -40,7 +40,7 @@ export default function Countdown() {
   }, []);
 
  return (
-  <div className="w-full text-center mt-8 space-y-6 text-black fade-in-up">
+  <div className="w-full text-center mt-8 space-y-3 text-black fade-in-up">
    {/* BLOQUE FECHA – REFERENCIA EXACTA · RESPONSIVE */}
 <div className="w-full flex flex-col items-center text-[#8B7355]">
 
@@ -122,7 +122,8 @@ export default function Countdown() {
   </div>
 </div>
 
-  <div className="pt-3 md:pt-8" />
+  <div className="pt-2 md:pt-4" />
+    
     <div className="space-y-3 md:space-y-4">
       <div className="text-center space-y-1 md:space-y-2">
         <p className="text-sm md:text-xl lg:text-2xl font-unna text-stone-700">
