@@ -101,8 +101,9 @@ export default function Countdown() {
       >
         2026
       </span>
-      <div className="w-22 sm:w-24 md:w-26 border-t border-[#8B7355]/45"></div>
+      <div className="w-32 sm:w-34 md:w-36 border-t border-[#8B7355]/45"></div>
     </div>
+  </div>
   {/* MES */}
   <div
     className="
@@ -118,7 +119,6 @@ export default function Countdown() {
     "
   >
     Junio
-  </div>
   </div>
 </div>
 
