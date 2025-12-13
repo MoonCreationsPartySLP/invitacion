@@ -254,7 +254,7 @@ export default function WeddingCard() {
                 }}
               >
                 <div className="h-full flex flex-col p-6 md:p-8 lg:p-12 overflow-y-auto">
-                  <h2 className="text-2xl md:text-3xl lg:text-4xl font-greatv text-[#8B7355] text-center mb-6 md:mb-8 tracking-[0.25em]">
+                  <h2 className="text-3xl md:text-4xl lg:text-5xl font-greatv text-[#8B7355] text-center mb-6 md:mb-8">
                     Nuestra Boda
                   </h2>
 
