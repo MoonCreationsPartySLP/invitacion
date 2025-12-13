@@ -44,29 +44,12 @@ export default function Countdown() {
    {/* BLOQUE FECHA – REFERENCIA EXACTA · RESPONSIVE */}
 <div className="w-full flex flex-col items-center text-[#8B7355]">
 
-  {/* MES */}
-  <div
-    className="
-      font-unna
-      uppercase
-      tracking-[0.45em]
-      mb-2
-      text-[20px]
-      sm:text-xs
-      md:text-sm
-      lg:text-base
-      xl:text-lg
-    "
-  >
-    Junio
-  </div>
-
   {/* FILA CENTRAL */}
   <div className="flex items-center w-full max-w-[520px]">
 
     {/* BLOQUE IZQUIERDO */}
     <div className="flex flex-col items-center flex-[0.8] gap-1">
-      <div className="w-22 sm:w-24 md:w-26 border-t border-[#8B7355]/45"></div>
+      <div className="w-32 sm:w-34 md:w-36 border-t border-[#8B7355]/45"></div>
       <span
         className="
           font-unna
@@ -81,7 +64,7 @@ export default function Countdown() {
       >
         Sábado
       </span>
-      <div className="w-22 sm:w-24 md:w-26 border-t border-[#8B7355]/45"></div>
+      <div className="w-32 sm:w-34 md:w-36 border-t border-[#8B7355]/45"></div>
     </div>
 
     {/* NÚMERO CENTRAL */}
@@ -103,24 +86,39 @@ export default function Countdown() {
 
     {/* BLOQUE DERECHO */}
     <div className="flex flex-col items-center flex-[0.8] gap-1">
-      <div className="w-22 sm:w-24 md:w-26 border-t border-[#8B7355]/45"></div>
+      <div className="w-32 sm:w-34 md:w-36 border-t border-[#8B7355]/45"></div>
       <span
         className="
           font-unna
           uppercase
           tracking-[0.35em]
-          text-[20px]
-          sm:text-[21px]
-          md:text-lg
-          lg:text-xl
-          xl:text-2xl
+          text-[30px]
+          sm:text-[31px]
+          md:text-xl
+          lg:text-2xl
+          xl:text-3xl
         "
       >
         2026
       </span>
       <div className="w-22 sm:w-24 md:w-26 border-t border-[#8B7355]/45"></div>
     </div>
-
+  {/* MES */}
+  <div
+    className="
+      font-unna
+      uppercase
+      tracking-[0.45em]
+      mb-2
+      text-[20px]
+      sm:text-xs
+      md:text-sm
+      lg:text-base
+      xl:text-lg
+    "
+  >
+    Junio
+  </div>
   </div>
 </div>
 
