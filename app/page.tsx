@@ -320,14 +320,14 @@ export default function WeddingCard() {
                     <div className="space-y-3 md:space-y-4">
                       <div className="flex justify-center mb-2">
                         <img src="/icons/iglesia.png" alt="Ceremonia Religiosa" className="
-                          w-6 h-6
-                          sm:w-8 sm:h-8
-                          md:w-10 md:h-10
-                          lg:w-12 lg:h-12
-                          opacity-80"
+                          w-8 h-8
+                          sm:w-10 sm:h-10
+                          md:w-12 md:h-12
+                          lg:w-14 lg:h-14
+                          opacity-90"
                         />
                       </div>
-                      <h4 className="font-greatv text-stone-800 text-center text-lg md:text-xl lg:text-2xl tracking-wide">
+                      <h4 className="font-greatv text-stone-800 text-center text-xl md:text-2xl lg:text-3xl tracking-wide">
                         Ceremonia Religiosa
                       </h4>
                       <div className="text-center space-y-1 md:space-y-2">
@@ -380,14 +380,14 @@ export default function WeddingCard() {
                     <div className="space-y-3 md:space-y-4">
                       <div className="flex justify-center mb-2">
                          <img src="/icons/recepcion.png" alt="Recepcion" className="
-                          w-6 h-6
-                          sm:w-8 sm:h-8
-                          md:w-10 md:h-10
-                          lg:w-12 lg:h-12
-                          opacity-80"
+                          w-8 h-8
+                          sm:w-10 sm:h-10
+                          md:w-12 md:h-12
+                          lg:w-14 lg:h-14
+                          opacity-90"
                         />
                       </div>
-                      <h4 className="font-greatv text-stone-800 text-center text-lg md:text-xl lg:text-2xl tracking-wide">
+                      <h4 className="font-greatv text-stone-800 text-center text-xl md:text-2xl lg:text-3xl tracking-wide">
                         Recepción
                       </h4>
                       <div className="text-center space-y-1 md:space-y-2">
