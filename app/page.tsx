@@ -3,7 +3,15 @@
 import { useState, useEffect, useRef } from "react"
 import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { MapPin, Volume2, VolumeX, X, Mail, CalendarIcon } from "lucide-react"
+import {
+  MapPin,
+  Volume2,
+  VolumeX,
+  X,
+  Gift,
+  Mail,
+  CalendarIcon,
+} from "lucide-react"
 import Contador from "@/components/contador"
 
 export default function WeddingCard() {
@@ -13,18 +21,38 @@ export default function WeddingCard() {
   const [isMusicPlaying, setIsMusicPlaying] = useState(false)
   const [envelopeFlipped, setEnvelopeFlipped] = useState(false)
   const [isGeneratingPDF, setIsGeneratingPDF] = useState(false)
+
   const audioRef = useRef<HTMLAudioElement>(null)
 
+  {/* ------------------ EFECTOS ------------------ */}
+
   useEffect(() => {
-    const timer = setTimeout(() => setEnvelopeFlipped(true), 300)
+    const timer = setTimeout(() => {
+      setEnvelopeFlipped(true)
+    }, 300)
     return () => clearTimeout(timer)
   }, [])
 
+  useEffect(() => {
+    return () => {
+      if (audioRef.current) {
+        audioRef.current.pause()
+      }
+    }
+  }, [])
+
+  {/* ------------------ HANDLERS ------------------ */}
+
   const handleOpenEnvelope = () => {
     setEnvelopeOpened(true)
-    setTimeout(() => setShowCard(true), 1500)
+    setTimeout(() => {
+      setShowCard(true)
+    }, 1500)
+
     if (audioRef.current) {
-      audioRef.current.play().catch(() => setIsMusicPlaying(false))
+      audioRef.current.play().catch(() => {
+        setIsMusicPlaying(false)
+      })
       setIsMusicPlaying(true)
     }
   }
@@ -32,7 +60,11 @@ export default function WeddingCard() {
   const handleCloseEnvelope = () => {
     setShowCard(false)
     setIsFlipped(false)
-    setTimeout(() => setEnvelopeOpened(false), 300)
+
+    setTimeout(() => {
+      setEnvelopeOpened(false)
+    }, 300)
+
     if (audioRef.current) {
       audioRef.current.pause()
       setIsMusicPlaying(false)
@@ -41,11 +73,14 @@ export default function WeddingCard() {
 
   const toggleMusic = () => {
     if (!audioRef.current) return
-    isMusicPlaying ? audioRef.current.pause() : audioRef.current.play()
+    if (isMusicPlaying) audioRef.current.pause()
+    else audioRef.current.play()
     setIsMusicPlaying(!isMusicPlaying)
   }
 
-  const createGoogleCalendarUrl = (event: {
+  {/* ------------------ CALENDAR ------------------ */}
+
+  const createGoogleCalendarUrl = (eventDetails: {
     title: string
     location: string
     details: string
@@ -53,15 +88,54 @@ export default function WeddingCard() {
     endDate: string
   }) => {
     const baseUrl = "https://calendar.google.com/calendar/render"
+
     const params = new URLSearchParams({
       action: "TEMPLATE",
-      text: event.title,
-      dates: `${event.startDate}/${event.endDate}`,
-      details: event.details,
-      location: event.location,
+      text: eventDetails.title,
+      dates: `${eventDetails.startDate}/${eventDetails.endDate}`,
+      details: eventDetails.details,
+      location: eventDetails.location,
     })
+
     return `${baseUrl}?${params.toString()}`
   }
+
+  { /* ------------------ PDF ------------------ */}
+
+  const handleDownloadPDF = async () => {
+    try {
+      setIsGeneratingPDF(true)
+      const html2pdf = (await import("html2pdf.js")).default
+
+      const element = document.createElement("div")
+      element.style.width = "800px"
+      element.style.padding = "40px"
+      element.style.backgroundColor = "white"
+
+      element.innerHTML = `
+        <div style="text-align:center;font-family:'Cormorant Garamond', serif;">
+          <img src="/wedding1.png" style="width:100%;max-width:600px;margin-bottom:40px;" />
+          <h1 style="color:#8B7355;font-size:32px;letter-spacing:0.2em;">
+            Nuestra Boda<br/>Angeles & Eduardo
+          </h1>
+        </div>
+      `
+
+      await html2pdf().set({
+        filename: "wedding-invitation.pdf",
+        html2canvas: { scale: 2, useCORS: true },
+        jsPDF: { unit: "in", format: "A3", orientation: "portrait" },
+      }).from(element).save()
+
+    } catch (err) {
+      console.error(err)
+      alert("Error al generar el PDF")
+    } finally {
+      setIsGeneratingPDF(false)
+    }
+  }
+
+  
 
   return (
     <div
@@ -69,65 +143,78 @@ export default function WeddingCard() {
       style={{ backgroundImage: "url(/images/image.png)" }}
     >
       <div className="absolute inset-0 bg-black/20 backdrop-blur-[2px]" />
+
       <audio
         ref={audioRef}
         loop
         src="/audio/Perfect Symphony (Ed Sheeran-Andrea Bocelli).mp3"
       />
 
-      {/* BOTONES SUPERIORES */}
+      {/* ------------------ BOTONES FLOTANTES ------------------ */}
       {showCard && (
         <>
           <button
             onClick={handleCloseEnvelope}
-            className="fixed top-4 left-4 z-50 p-3 rounded-full bg-stone-800/90 text-white"
+            className="fixed top-4 left-4 z-50 p-3 rounded-full bg-stone-800 text-white"
           >
-            <X className="w-5 h-5" />
+            <X />
           </button>
 
           <button
             onClick={toggleMusic}
-            className="fixed top-4 right-4 z-50 p-3 rounded-full bg-stone-800/90 text-white"
+            className="fixed top-4 right-4 z-50 p-3 rounded-full bg-stone-800 text-white"
           >
             {isMusicPlaying ? <Volume2 /> : <VolumeX />}
           </button>
         </>
       )}
 
-      {/* SOBRE */}
+      {/* ------------------ SOBRE ------------------ */}
       {!showCard && (
         <div className="relative w-full max-w-4xl px-4">
-          <div className="envelope-container" onClick={handleOpenEnvelope}>
-            <img
-              src="/imagennames.png"
-              alt="Postal"
-              className="mx-auto w-[260px] sm:w-[420px] md:w-[700px]"
-            />
+          <div style={{ perspective: "2000px" }}>
+            <div
+              className={`envelope-container ${envelopeOpened ? "opened" : ""} ${
+                envelopeFlipped ? "flipped" : ""
+              }`}
+              onClick={!envelopeOpened ? handleOpenEnvelope : undefined}
+            >
+              <div className="envelope-body" />
+              <div className="envelope-frame" />
 
-            {/*
-            <div className="envelope-address">
-              <p className="calligraphy-text"></p>
+              <div
+                className={`absolute left-1/2 transform -translate-x-1/2 transition-all duration-700 ${
+                  envelopeOpened ? "opacity-0 scale-95" : "opacity-100 scale-100"
+                }`}
+              >
+                <img
+                  src="/imagennames.png"
+                  className="w-[260px] md:w-[700px]"
+                />
+              </div>
+
+              {/* COMENTARIO JSX CORREGIDO */}
+              {/*
+              <div className="envelope-address">
+                <p className="calligraphy-text"></p>
+              </div>
+              */}
+
+              <button onClick={handleOpenEnvelope} className="envelope-button">
+                <img src="/sello.png" className="w-20 h-20" />
+              </button>
             </div>
-            */}
-
-            <button className="envelope-button">
-              <img
-                src="/sello.png"
-                alt="Open"
-                className="w-20 h-20 md:w-28 md:h-28 object-contain"
-              />
-            </button>
           </div>
         </div>
       )}
 
-      {/* TARJETA */}
+      {/* ------------------ TARJETA ------------------ */}
       {showCard && (
         <div className="w-full max-w-5xl px-4">
           <div
-            className="relative cursor-pointer"
-            onClick={() => setIsFlipped(!isFlipped)}
+            className="relative"
             style={{ perspective: "1000px" }}
+            onClick={() => setIsFlipped(!isFlipped)}
           >
             <div
               className="relative transition-transform duration-700"
@@ -136,52 +223,35 @@ export default function WeddingCard() {
                 transform: isFlipped ? "rotateY(180deg)" : "rotateY(0deg)",
               }}
             >
-              {/* PORTADA */}
               <Card
-                className="w-full bg-white shadow-2xl"
+                className="w-full shadow-2xl"
                 style={{ backfaceVisibility: "hidden" }}
               >
-                <img src="/wedding1.png" className="w-full h-full object-cover" />
+                <img src="/wedding1.png" />
               </Card>
 
-              {/* CONTENIDO */}
               <Card
-                className="absolute inset-0 w-full bg-white shadow-2xl"
+                className="absolute inset-0"
                 style={{
-                  transform: "rotateY(180deg)",
                   backfaceVisibility: "hidden",
+                  transform: "rotateY(180deg)",
                 }}
               >
-                <div className="p-6 space-y-6 overflow-y-auto">
-                  <h2 className="text-5xl font-greatv text-center text-[#8B7355]">
+                <div className="p-6">
+                  <h2 className="text-center text-4xl font-greatv text-[#8B7355]">
                     Nuestra Boda
                   </h2>
 
                   <Contador />
 
-                  {/* CÓDIGO DE VESTIMENTA */}
-                  <div className="space-y-4">
-                    <img src="/icons/dress.png" className="mx-auto w-12 h-12" />
-                    <h4 className="font-greatv text-center text-2xl">
-                      Código de Vestimenta
-                    </h4>
-                    <p className="text-center">Elegante</p>
-                  </div>
-
-                  {/* MENSAJE FINAL */}
-                  <div className="space-y-4">
-                    <img src="/icons/anillos.png" className="mx-auto w-12 h-12" />
-                    <p className="text-center">
-                      Esperamos contar con su presencia.
-                    </p>
-                    <h4 className="font-greatv text-center text-2xl">
-                      ¡Muchas Gracias!
-                    </h4>
-                  </div>
-
-                  <Button className="w-full" onClick={() => window.open("https://wa.link/6drmce")}>
-                    <Mail className="mr-2" />
-                    Confirmar Asistencia
+                  <Button
+                    className="w-full mt-6 bg-[#8B7355]"
+                    onClick={(e) => {
+                      e.stopPropagation()
+                      handleDownloadPDF()
+                    }}
+                  >
+                    Descargar Invitación
                   </Button>
                 </div>
               </Card>
