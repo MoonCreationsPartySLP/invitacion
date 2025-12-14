@@ -471,6 +471,7 @@ export default function WeddingCard() {
                           ¡Muchas Gracias!
                         </h4>
                       </div>
+                    </div>
 
 
                   <div className="space-y-3 md:space-y-4 mt-6 md:mt-8">
