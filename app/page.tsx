@@ -406,22 +406,13 @@ export default function WeddingCard() {
                       </div>
 
                       <div className="flex flex-col sm:flex-row justify-center gap-3 md:gap-6 mt-3 md:mt-4">
-                        <Button
-                          variant="link"
-                          className="text-[#8B7355] hover:text-[#6B5335] p-0 h-auto text-sm md:text-base lg:text-lg font-display"
-                          onClick={(e) => {
-                            e.stopPropagation()
-                            window.open("https://maps.app.goo.gl/Kv6aFtLzxcxdEZ6X8", "_blank")
-                          }}
-                        >
+                        <Button variant="link" className="text-[#8B7355] hover:text-[#6B5335] p-0 h-auto text-sm md:text-base lg:text-lg font-display"
+                          onClick={(e) => {e.stopPropagation() window.open("https://maps.app.goo.gl/Kv6aFtLzxcxdEZ6X8", "_blank") }}>
                           <MapPin className="w-4 h-4 md:w-5 md:h-5 mr-2" />
                           Ver Ubicación
                         </Button>
-                        <Button
-                          variant="link"
-                          className="text-[#8B7355] hover:text-[#6B5335] p-0 h-auto text-sm md:text-base lg:text-lg font-display"
-                          onClick={(e) => {
-                            e.stopPropagation()
+                        <Button variant="link" className="text-[#8B7355] hover:text-[#6B5335] p-0 h-auto text-sm md:text-base lg:text-lg font-display"
+                          onClick={(e) => {e.stopPropagation()
                             const calendarUrl = createGoogleCalendarUrl({
                               title: "Recepción - Boda Angeles & Eduardo",
                               location: "Jardín La Noria, C. Comité de los 13 Pro J.Carrillo 35, Centro, 78450 Ahualulco del Sonido 13, S.L.P.",
@@ -429,13 +420,50 @@ export default function WeddingCard() {
                               startDate: "20260627T170000-0600",
                               endDate: "20260628T040000-0600"
                             })
-                            window.open(calendarUrl, "_blank")
-                          }}
-                        >
+                            window.open(calendarUrl, "_blank")}}>
                           <CalendarIcon className="w-4 h-4 md:w-5 md:h-5 mr-2" />
                           Agendar en mi Calendario
                         </Button>
                       </div>
+                       <div className="space-y-3 md:space-y-4">
+                      <div className="flex justify-center mb-2">
+                         <img src="/icons/dress.png" alt="Code Dress" className="
+                          w-8 h-8
+                          sm:w-10 sm:h-10
+                          md:w-12 md:h-12
+                          lg:w-14 lg:h-14
+                          opacity-90"
+                        />
+                      </div>
+                      <h4 className="font-greatv text-stone-800 text-center text-xl md:text-2xl lg:text-3xl tracking-wide">
+                        Código de Vestimenta 
+                      </h4>
+                      <div className="text-center space-y-1 md:space-y-2">
+                        <p className="text-sm md:text-base lg:text-lg font-display font-medium text-stone-700">
+                          Elegante
+                        </p>
+                        <p className="text-sm md:text-base lg:text-lg font-display text-stone-600">
+                          Con cariño les pedimos evitar prendas en color blanco y tonos similares.
+                        </p>
+                      </div>
+                      <div className="space-y-3 md:space-y-4">
+                      <div className="flex justify-center mb-2">
+                         <img src="/icons/anillos.png" alt="Wedding" className="
+                          w-8 h-8
+                          sm:w-10 sm:h-10
+                          md:w-12 md:h-12
+                          lg:w-14 lg:h-14
+                          opacity-90"
+                        />
+                      </div>
+                      <div className="text-center space-y-1 md:space-y-2">
+                        <p className="text-lg md:text-lg lg:text-xl font-unna text-stone-600">
+                          Esperamos contar con su presencia.
+                        </p>
+                      </div>
+                      <h4 className="font-greatv text-stone-800 text-center text-xl md:text-2xl lg:text-3xl tracking-wide">
+                        ¡Muchas Gracias!
+                      </h4>
                     </div>
                   </div>
 
