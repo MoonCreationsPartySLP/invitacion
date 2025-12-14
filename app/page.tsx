@@ -407,7 +407,8 @@ export default function WeddingCard() {
 
                       <div className="flex flex-col sm:flex-row justify-center gap-3 md:gap-6 mt-3 md:mt-4">
                         <Button variant="link" className="text-[#8B7355] hover:text-[#6B5335] p-0 h-auto text-sm md:text-base lg:text-lg font-display"
-                          onClick={(e) => {e.stopPropagation() window.open("https://maps.app.goo.gl/Kv6aFtLzxcxdEZ6X8", "_blank") }}>
+                          onClick={(e) => {e.stopPropagation() 
+                            window.open("https://maps.app.goo.gl/Kv6aFtLzxcxdEZ6X8", "_blank")}}>
                           <MapPin className="w-4 h-4 md:w-5 md:h-5 mr-2" />
                           Ver Ubicación
                         </Button>
