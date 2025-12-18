@@ -460,7 +460,6 @@ export default function WeddingCard() {
         ¡Da Clic sobre la tarjeta para ver los Detalles!
         </p>
       </div>
-    </div>
     )}
   </div>
 
