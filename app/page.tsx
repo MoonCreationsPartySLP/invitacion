@@ -152,48 +152,48 @@ export default function WeddingCard() {
 
     {!showCard && (
       <div className="relative w-full max-w-4xl px-4">
-        <div style={{ perspective: "2000px" }} className="w-full">
-          <div className={`envelope-container ${envelopeOpened ? "opened" : ""} ${envelopeFlipped ? "flipped" : ""}`} 
-            onClick={!envelopeOpened ? handleOpenEnvelope : undefined} style={{ transformStyle: "preserve-3d" }}>
-              <div className="envelope-body" />
-              <div className="envelope-corner top-left" />
-              <div className="envelope-corner top-right" />
-              <div className="envelope-corner bottom-left" />
-              <div className="envelope-corner bottom-right" />
-              <div className="envelope-ornament left-ornament" />
-              <div className="envelope-ornament right-ornament" />
-              <div className="envelope-ornament-center" />
-              <div className="envelope-frame" />
+          <div style={{ perspective: "2000px" }} className="w-full">
+            <div className={`envelope-container ${envelopeOpened ? "opened" : ""} ${envelopeFlipped ? "flipped" : ""}`} onClick={!envelopeOpened ? handleOpenEnvelope : undefined} style={{ transformStyle: "preserve-3d" }}>
+                  <div className="envelope-body" />
+                  <div className="envelope-corner top-left" />
+                  <div className="envelope-corner top-right" />
+                  <div className="envelope-corner bottom-left" />
+                  <div className="envelope-corner bottom-right" />
+                  <div className="envelope-ornament left-ornament" />
+                  <div className="envelope-ornament right-ornament" />
+                  <div className="envelope-ornament-center" />
+                  <div className="envelope-frame" />
 
-              <div className={`absolute left-1/2 transform -translate-x-1/2 z-50 top-[12%] sm:top-[8%] md:top-[2%] transition-all duration-700 ${envelopeOpened ? "opacity-0 scale-95" : "opacity-100 scale-100"}`}>
+                  <div className={`absolute left-1/2 transform -translate-x-1/2 z-50 top-[12%] sm:top-[8%] md:top-[2%] transition-all duration-700 ${envelopeOpened ? "opacity-0 scale-95" : "opacity-100 scale-100"}`}>
 
-                <img src="/imagennames.png" alt="Postal image" 
-                  className="rounded-sm w-[260px] sm:w-[420px] md:w-[700px] h-auto object-contain"/>
-              
-              </div>
+                    <img src="/imagennames.png" alt="Postal image" 
+                      className="rounded-sm w-[260px] sm:w-[420px] md:w-[700px] h-auto object-contain"/>
+                  
+                  </div>
 
-              {/*<div className="envelope-address">
-              <p className="calligraphy-text"></p>
-              </div>*/}
+                  {/*<div className="envelope-address">
+                  <p className="calligraphy-text"></p>
+                  </div>*/}
 
-              <div className="envelope-flap transition-none"/>
-              <button onClick={handleOpenEnvelope} className="envelope-button">
-                <img src="/sello.png" alt="Open"
-                className=" object-contain pointer-events-none w-20 h-20 sm:w-20 sm:h-20 md:w-26 md:h-26"/>
-              </button>
+                  <div className="envelope-flap transition-none"/>
+
+                  <button onClick={handleOpenEnvelope} className="envelope-button">
+                    <img src="/sello.png" alt="Open"
+                    className=" object-contain pointer-events-none w-20 h-20 sm:w-20 sm:h-20 md:w-26 md:h-26"/>
+                  </button>
 
 
-              {!envelopeOpened && (
-                <div className="absolute -bottom-12 md:-bottom-16 left-1/2 transform -translate-x-1/2 text-center">
-                  <p className="text-xs md:text-sm text-stone-600 font-light animate-pulse">
-                    Click to open
-                  </p>
-                </div>)
-              }
+                  {!envelopeOpened && (
+                    <div className="absolute -bottom-12 md:-bottom-16 left-1/2 transform -translate-x-1/2 text-center">
+                      <p className="text-xs md:text-sm text-stone-600 font-light animate-pulse">
+                        Click to open
+                      </p>
+                    </div>)
+                  }
             </div>
           </div>
-        </div>)
-      }
+      </div>)
+    }
 
     {showCard && (
       <div className="w-full max-w-5xl px-4 animate-slide-up">
@@ -225,210 +225,210 @@ export default function WeddingCard() {
                 </div> 
 
                 <div className="flex flex-col sm:flex-row justify-center gap-16 mt-6">
-                    <div className="text-center space-y-2">
-                      <h4 className="font-display font-semibold text-stone-800 text-base md:text-lg lg:text-xl tracking-wide uppercase">
-                        Padres de la novia
-                      </h4>
-                      <p className="text-sm md:text-base lg:text-xl font-display text-stone-600">
-                        Marcelina Vázquez y
-                      </p>
-                      <p className="text-sm md:text-base lg:text-xl font-display text-stone-600">
-                        Luis Zapata
-                      </p>
-                    </div>
+                      <div className="text-center space-y-2">
+                        <h4 className="font-display font-semibold text-stone-800 text-base md:text-lg lg:text-xl tracking-wide uppercase">
+                          Padres de la novia
+                        </h4>
+                        <p className="text-sm md:text-base lg:text-xl font-display text-stone-600">
+                          Marcelina Vázquez y
+                        </p>
+                        <p className="text-sm md:text-base lg:text-xl font-display text-stone-600">
+                          Luis Zapata
+                        </p>
+                      </div>
 
-                    <div className="text-center space-y-2">
-                      <h4 className="font-display font-semibold text-stone-800 text-base md:text-lg lg:text-xl tracking-wide uppercase">
-                        Padres del novio
-                      </h4>
-                      <p className="text-sm md:text-base lg:text-xl font-display text-stone-600">
-                        Irene Torres y
-                      </p>
-                      <p className="text-sm md:text-base lg:text-xl font-display text-stone-600">
-                        Eduardo Contreras 
-                      </p>
-                    </div>
+                      <div className="text-center space-y-2">
+                        <h4 className="font-display font-semibold text-stone-800 text-base md:text-lg lg:text-xl tracking-wide uppercase">
+                          Padres del novio
+                        </h4>
+                        <p className="text-sm md:text-base lg:text-xl font-display text-stone-600">
+                          Irene Torres y
+                        </p>
+                        <p className="text-sm md:text-base lg:text-xl font-display text-stone-600">
+                          Eduardo Contreras 
+                        </p>
+                      </div>
 
-                    <div className="text-center space-y-2 mt-5">
-                      <h4 className="font-display font-semibold text-stone-800 text-base md:text-lg lg:text-xl tracking-wide uppercase">
-                        Padrinos de Velación
-                      </h4>
-                      <p className="text-sm md:text-base lg:text-xl font-display text-stone-600">
-                        Marcelina Vázquez y
-                      </p>
-                      <p className="text-sm md:text-base lg:text-xl font-display text-stone-600">
-                        Luis Zapata
-                      </p>
-                    </div>
-                    
-                    <Contador />
-
-                    <div className="flex flex-col sm:flex-row justify-center gap-3 md:gap-6 mt-3 md:mt-4">
+                      <div className="text-center space-y-2 mt-5">
+                        <h4 className="font-display font-semibold text-stone-800 text-base md:text-lg lg:text-xl tracking-wide uppercase">
+                          Padrinos de Velación
+                        </h4>
+                        <p className="text-sm md:text-base lg:text-xl font-display text-stone-600">
+                          Marcelina Vázquez y
+                        </p>
+                        <p className="text-sm md:text-base lg:text-xl font-display text-stone-600">
+                          Luis Zapata
+                        </p>
+                      </div>
                       
-                    </div>
+                      <Contador />
 
-                    <div className="pt-6 md:pt-8" />
-
-                    <div className="flex-1 space-y-6 md:space-y-10">
-                      <h3 className="text-lg md:text-xl lg:text-2xl font-display font-medium text-stone-700 text-center tracking-[0.2em] uppercase">
-
-                      </h3>
-                    </div>
-
-                    <div className="space-y-3 md:space-y-4">
-
-                    <div className="flex justify-center mb-2">
-                      <img src="/icons/iglesia.png" alt="Ceremonia Religiosa" className="
-                      w-8 h-8
-                      sm:w-10 sm:h-10
-                      md:w-12 md:h-12
-                      lg:w-14 lg:h-14
-                      opacity-90"/>
-                    </div>
-
-                    <div className="flex-1 space-y-6 md:space-y-10">
-                      <h4 className="font-greatv text-stone-800 text-center text-xl md:text-2xl lg:text-3xl tracking-wide">
-                      Ceremonia Religiosa
-                      </h4>
-                      <div className="text-center space-y-1 md:space-y-2">
-                        <p className="text-sm md:text-base lg:text-lg font-display font-medium text-stone-700">
-                        Parroquia de Nuestra Señora de la Candelaria 
-                        </p>
-                        <p className="text-sm md:text-base lg:text-lg font-display text-stone-600">
-                        Plaza Julián Carrillo 3, CP.78450, Ahualulco del Sonido 13, S.L.P.
-                        </p>
-                        <p className="text-sm md:text-base lg:text-lg font-display text-stone-600">
-                        15:00 hrs
-                        </p>
-                        <p className="text-sm md:text-base lg:text-lg font-display text-stone-600"></p>
-                        <p className="text-sm md:text-base lg:text-lg font-display text-stone-600"></p>
-                      </div>
-                    </div>
-
-                    <div className="flex flex-col sm:flex-row justify-center gap-3 md:gap-6 mt-3 md:mt-4">
-                      <Button variant="link" className="text-[#8B7355] hover:text-[#6B5335] p-0 h-auto text-sm md:text-base lg:text-lg font-display" 
-                        onClick={(e) => { 
-                          e.stopPropagation() 
-                          window.open("https://maps.app.goo.gl/Zy33LV52gPrW4xFz7", "_blank") }}>
-                      
-                        <MapPin className="w-4 h-4 md:w-5 md:h-5 mr-2" />
-
-                        Ver Ubicación
-
-                      </Button>
-                      <Button variant="link" className="text-[#8B7355] hover:text-[#6B5335] p-0 h-auto text-sm md:text-base lg:text-lg font-display" 
-                        onClick={(e) => { 
-                          e.stopPropagation()
-                          const calendarUrl = createGoogleCalendarUrl({
-                          title: "Ceremonia Religiosa - Boda Angeles & Eduardo",
-                          location: "Parroquia Nuestra Señora de La Candelaria, Plaza Julián Carrillo 3, 78450 Ahualulco del Sonido 13, S.L.P.",
-                          details: "Ceremonia Religiosa Boda Angeles y Eduardo",
-                          startDate: "20260627T150000-0600",
-                          endDate: "20260627T160000-0600",})
-                          window.open(calendarUrl, "_blank") }}>
-
-                        <CalendarIcon className="w-4 h-4 md:w-5 md:h-5 mr-2" />
-
-                        Agendar en mi Calendario
-
-                      </Button>
-                    </div>
-
-                    <div className="space-y-3 md:space-y-4">
-                      <div className="flex justify-center mb-2">
-                        <img src="/icons/recepcion.png" alt="Recepcion" className=" 
-                          w-8 h-8
-                          sm:w-10 sm:h-10
-                          md:w-12 md:h-12
-                          lg:w-14 lg:h-14
-                          opacity-90"/>
-                      </div>
-                      <h4 className="font-greatv text-stone-800 text-center text-xl md:text-2xl lg:text-3xl tracking-wide">
-                        Recepción
-                      </h4>
-                      <div className="text-center space-y-1 md:space-y-2">
-                        <p className="text-sm md:text-base lg:text-lg font-display font-medium text-stone-700">
-                          Jardín de Eventos La Noria
-                        </p>
-                        <p className="text-sm md:text-base lg:text-lg font-display text-stone-600">
-                          Calle Comité de los 13 Pro J.Carrillo 35, 
-                        </p>
-                        <p className="text-sm md:text-base lg:text-lg font-display text-stone-600">
-                          Centro, 78450 Ahualulco del Sonido 13, S.L.P.
-                        </p>
-                        <p className="text-sm md:text-base lg:text-lg font-display text-stone-600">
-                          17:00 hrs
-                        </p>
-                    </div>
-
-                    <div className="flex flex-col sm:flex-row justify-center gap-3 md:gap-6 mt-3 md:mt-4">
-                      <Button variant="link" className="text-[#8B7355] hover:text-[#6B5335] p-0 h-auto text-sm md:text-base lg:text-lg font-display" 
-                        onClick={(e) => {
-                        e.stopPropagation() 
-                        window.open("https://maps.app.goo.gl/Kv6aFtLzxcxdEZ6X8", "_blank")}}>
-
-                        <MapPin className="w-4 h-4 md:w-5 md:h-5 mr-2" />
-
-                        Ver Ubicación
-
-                      </Button>
-                      <Button variant="link" className="text-[#8B7355] hover:text-[#6B5335] p-0 h-auto text-sm md:text-base lg:text-lg font-display" 
-                        onClick={(e) => {e.stopPropagation()
-                        const calendarUrl = createGoogleCalendarUrl({
-                        title: "Recepción - Boda Angeles & Eduardo",
-                        location: "Jardín La Noria, C. Comité de los 13 Pro J.Carrillo 35, Centro, 78450 Ahualulco del Sonido 13, S.L.P.",
-                        details: "Recepción de la Boda de Angeles y Eduardo",
-                        startDate: "20260627T170000-0600",
-                        endDate: "20260628T040000-0600" }) 
-                        window.open(calendarUrl, "_blank")}}>
-
-                        <CalendarIcon className="w-4 h-4 md:w-5 md:h-5 mr-2" />
-
-                        Agendar en mi Calendario
-
-                      </Button>
-                    </div>
-
-                    {/* Código de Vestimenta */}
-
-                    <div className="space-y-3 md:space-y-4">
-                      <div className="flex justify-center mb-2">
-                        <img src="/icons/dress.png" alt="Code Dress" className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 opacity-90"/>
+                      <div className="flex flex-col sm:flex-row justify-center gap-3 md:gap-6 mt-3 md:mt-4">
                       </div>
 
-                      <h4 className="font-greatv text-stone-800 text-center text-xl md:text-2xl lg:text-3xl tracking-wide">
-                        Código de Vestimenta
-                      </h4>
+                      <div className="pt-6 md:pt-8" />
 
-                      <div className="text-center space-y-1 md:space-y-2">
-                        <p className="text-sm md:text-base lg:text-lg font-display font-medium text-stone-700">
-                          Elegante
-                        </p>
-                        <p className="text-sm md:text-base lg:text-lg font-display text-stone-600">
-                          Con cariño les pedimos evitar prendas en color blanco y tonos similares.
-                        </p>
-                      </div>
-                    </div>
+                      <div className="flex-1 space-y-6 md:space-y-10">
+                        <h3 className="text-lg md:text-xl lg:text-2xl font-display font-medium text-stone-700 text-center tracking-[0.2em] uppercase">
 
-                    {/* Mensaje Final */}
-
-                    <div className="space-y-3 md:space-y-4">
-                      <div className="flex justify-center mb-2">
-                        <img src="/icons/anillos.png" alt="Wedding" className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 opacity-90"/>
+                        </h3>
                       </div>
 
-                      <div className="text-center space-y-1 md:space-y-2">
-                        <p className="text-lg md:text-lg lg:text-xl font-unna text-stone-600">
-                        Esperamos contar con su presencia.
-                        </p>
+                      <div className="space-y-3 md:space-y-4">
+
+                          <div className="flex justify-center mb-2">
+                            <img src="/icons/iglesia.png" alt="Ceremonia Religiosa" className="
+                            w-8 h-8
+                            sm:w-10 sm:h-10
+                            md:w-12 md:h-12
+                            lg:w-14 lg:h-14
+                            opacity-90"/>
+                          </div>
+
+                          <div className="flex-1 space-y-6 md:space-y-10">
+                              <h4 className="font-greatv text-stone-800 text-center text-xl md:text-2xl lg:text-3xl tracking-wide">
+                              Ceremonia Religiosa
+                              </h4>
+                              <div className="text-center space-y-1 md:space-y-2">
+                                <p className="text-sm md:text-base lg:text-lg font-display font-medium text-stone-700">
+                                Parroquia de Nuestra Señora de la Candelaria 
+                                </p>
+                                <p className="text-sm md:text-base lg:text-lg font-display text-stone-600">
+                                Plaza Julián Carrillo 3, CP.78450, Ahualulco del Sonido 13, S.L.P.
+                                </p>
+                                <p className="text-sm md:text-base lg:text-lg font-display text-stone-600">
+                                15:00 hrs
+                                </p>
+                                <p className="text-sm md:text-base lg:text-lg font-display text-stone-600"></p>
+                                <p className="text-sm md:text-base lg:text-lg font-display text-stone-600"></p>
+                              </div>
+                          </div>
+
+                          <div className="flex flex-col sm:flex-row justify-center gap-3 md:gap-6 mt-3 md:mt-4">
+                            <Button variant="link" className="text-[#8B7355] hover:text-[#6B5335] p-0 h-auto text-sm md:text-base lg:text-lg font-display" 
+                              onClick={(e) => { 
+                                e.stopPropagation() 
+                                window.open("https://maps.app.goo.gl/Zy33LV52gPrW4xFz7", "_blank") }}>
+                            
+                              <MapPin className="w-4 h-4 md:w-5 md:h-5 mr-2" />
+
+                              Ver Ubicación
+
+                            </Button>
+                            <Button variant="link" className="text-[#8B7355] hover:text-[#6B5335] p-0 h-auto text-sm md:text-base lg:text-lg font-display" 
+                              onClick={(e) => { 
+                                e.stopPropagation()
+                                const calendarUrl = createGoogleCalendarUrl({
+                                title: "Ceremonia Religiosa - Boda Angeles & Eduardo",
+                                location: "Parroquia Nuestra Señora de La Candelaria, Plaza Julián Carrillo 3, 78450 Ahualulco del Sonido 13, S.L.P.",
+                                details: "Ceremonia Religiosa Boda Angeles y Eduardo",
+                                startDate: "20260627T150000-0600",
+                                endDate: "20260627T160000-0600",})
+                                window.open(calendarUrl, "_blank") }}>
+
+                              <CalendarIcon className="w-4 h-4 md:w-5 md:h-5 mr-2" />
+
+                              Agendar en mi Calendario
+
+                            </Button>
+                          </div>
+
+                          <div className="space-y-3 md:space-y-4">
+                              <div className="flex justify-center mb-2">
+                                <img src="/icons/recepcion.png" alt="Recepcion" className=" 
+                                  w-8 h-8
+                                  sm:w-10 sm:h-10
+                                  md:w-12 md:h-12
+                                  lg:w-14 lg:h-14
+                                  opacity-90"/>
+                              </div>
+                              <h4 className="font-greatv text-stone-800 text-center text-xl md:text-2xl lg:text-3xl tracking-wide">
+                                Recepción
+                              </h4>
+                              <div className="text-center space-y-1 md:space-y-2">
+                                <p className="text-sm md:text-base lg:text-lg font-display font-medium text-stone-700">
+                                  Jardín de Eventos La Noria
+                                </p>
+                                <p className="text-sm md:text-base lg:text-lg font-display text-stone-600">
+                                  Calle Comité de los 13 Pro J.Carrillo 35, 
+                                </p>
+                                <p className="text-sm md:text-base lg:text-lg font-display text-stone-600">
+                                  Centro, 78450 Ahualulco del Sonido 13, S.L.P.
+                                </p>
+                                <p className="text-sm md:text-base lg:text-lg font-display text-stone-600">
+                                  17:00 hrs
+                                </p>
+                              </div>
+                          </div>  
+
+                          <div className="flex flex-col sm:flex-row justify-center gap-3 md:gap-6 mt-3 md:mt-4">
+                            <Button variant="link" className="text-[#8B7355] hover:text-[#6B5335] p-0 h-auto text-sm md:text-base lg:text-lg font-display" 
+                              onClick={(e) => {
+                              e.stopPropagation() 
+                              window.open("https://maps.app.goo.gl/Kv6aFtLzxcxdEZ6X8", "_blank")}}>
+
+                              <MapPin className="w-4 h-4 md:w-5 md:h-5 mr-2" />
+
+                              Ver Ubicación
+
+                            </Button>
+                            <Button variant="link" className="text-[#8B7355] hover:text-[#6B5335] p-0 h-auto text-sm md:text-base lg:text-lg font-display" 
+                              onClick={(e) => {e.stopPropagation()
+                              const calendarUrl = createGoogleCalendarUrl({
+                              title: "Recepción - Boda Angeles & Eduardo",
+                              location: "Jardín La Noria, C. Comité de los 13 Pro J.Carrillo 35, Centro, 78450 Ahualulco del Sonido 13, S.L.P.",
+                              details: "Recepción de la Boda de Angeles y Eduardo",
+                              startDate: "20260627T170000-0600",
+                              endDate: "20260628T040000-0600" }) 
+                              window.open(calendarUrl, "_blank")}}>
+
+                              <CalendarIcon className="w-4 h-4 md:w-5 md:h-5 mr-2" />
+
+                              Agendar en mi Calendario
+
+                            </Button>
+                          </div>
+
+                          {/* Código de Vestimenta */}
+
+                        <div className="space-y-3 md:space-y-4">
+                            <div className="flex justify-center mb-2">
+                              <img src="/icons/dress.png" alt="Code Dress" className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 opacity-90"/>
+                            </div>
+
+                            <h4 className="font-greatv text-stone-800 text-center text-xl md:text-2xl lg:text-3xl tracking-wide">
+                              Código de Vestimenta
+                            </h4>
+
+                            <div className="text-center space-y-1 md:space-y-2">
+                              <p className="text-sm md:text-base lg:text-lg font-display font-medium text-stone-700">
+                                Elegante
+                              </p>
+                              <p className="text-sm md:text-base lg:text-lg font-display text-stone-600">
+                                Con cariño les pedimos evitar prendas en color blanco y tonos similares.
+                              </p>
+                            </div>
+                        </div>
+
+                          {/* Mensaje Final */}
+
+                          <div className="space-y-3 md:space-y-4">
+                            <div className="flex justify-center mb-2">
+                              <img src="/icons/anillos.png" alt="Wedding" className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 opacity-90"/>
+                            </div>
+
+                            <div className="text-center space-y-1 md:space-y-2">
+                              <p className="text-lg md:text-lg lg:text-xl font-unna text-stone-600">
+                              Esperamos contar con su presencia.
+                              </p>
+                            </div>
+
+                            <h4 className="font-greatv text-stone-800 text-center text-xl md:text-2xl lg:text-3xl tracking-wide">
+                            ¡Muchas Gracias!
+                            </h4>
+                          </div>
                       </div>
-
-                      <h4 className="font-greatv text-stone-800 text-center text-xl md:text-2xl lg:text-3xl tracking-wide">
-                      ¡Muchas Gracias!
-                      </h4>
-                    </div>
-                  </div>
-
+                </div>
 
                 <div className="space-y-3 md:space-y-4 mt-6 md:mt-8">
                   <Button 
@@ -460,7 +460,9 @@ export default function WeddingCard() {
         ¡Da Clic sobre la tarjeta para ver los Detalles!
         </p>
       </div>
+    </div>
     )}
   </div>
+
   )
 }
