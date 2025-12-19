@@ -129,7 +129,7 @@ export default function WeddingCard() {
     <div className="min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat" 
       style={{ backgroundImage: "url(/images/image.png)" }} >
 
-    <div className="absolute inset-0 bg-black/20 backdrop-blur-[2px]" />
+    <div className="absolute inset-0 bg-black/0 backdrop-blur-[0px]" />
     <audio ref={audioRef} loop src="/audio/Perfect Symphony (Ed Sheeran-Andrea Bocelli).mp3" />
 
     {showCard && ( 
