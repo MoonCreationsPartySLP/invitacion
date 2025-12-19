@@ -107,7 +107,7 @@ export default function WeddingCard() {
         html2canvas: { scale: 2, useCORS: true, logging: false },
         jsPDF: { unit: "in", format: "A3", orientation: "portrait" }, 
       }
-      await html2pdf().set(opt).from(element).save()*/
+      await html2pdf().set(opt).from(element).save()*/}
         
       const link = document.createElement("a")
       link.href = "/InvitacionBodaAyE-MoonCreationsPartySLP.pdf"
