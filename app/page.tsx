@@ -398,12 +398,13 @@ export default function WeddingCard() {
                       {/* Código de Vestimenta */}
 
                       <div className="space-y-3 md:space-y-4">
-                          <h4 className="font-greatv text-stone-800 text-center text-xl md:text-2xl lg:text-3xl tracking-wide">
-                            Código de Vestimenta
-                          </h4>
-                        <div className="flex justify-center mb-2">
+                          <div className="flex justify-center mb-2">
                             <img src="/icons/dress.png" alt="Code Dress" className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 opacity-90"/>
                           </div>
+                        <h4 className="font-greatv text-stone-800 text-center text-xl md:text-2xl lg:text-3xl tracking-wide">
+                            Código de Vestimenta
+                          </h4>
+                        
                           <div className="text-center space-y-1 md:space-y-2">
                             <p className="text-sm md:text-base lg:text-lg font-display font-medium text-stone-700">
                               Elegante
