@@ -126,8 +126,7 @@ export default function WeddingCard() {
   }, [])
 
   return (
-    <div className="relative min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat" 
-      style={{ backgroundImage: "url(/images/image.png)" }} >
+    <div className="relative min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat bg-[url('/images/bg-mobile.png')] sm:bg-[url('/images/bg-desktop.png')]" >
 
     <div className="absolute inset-0 bg-black/0 backdrop-blur-[0px]" />
     <audio ref={audioRef} loop src="/audio/Perfect Symphony (Ed Sheeran-Andrea Bocelli).mp3" />
