@@ -435,7 +435,7 @@ export default function WeddingCard() {
                         </h4>
                       </div>
                   </div>
-                  {*/BOTONES--------*/}
+                  {/*BOTONES--------*/}
                   <div className="space-y-3 md:space-y-4 mt-6 md:mt-8">
                     <Button 
                       className="w-full bg-[#8B7355] hover:bg-[#6B5335] text-white font-display font-medium tracking-widest text-sm md:text-base lg:text-lg py-4 md:py-6" 
