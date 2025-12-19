@@ -247,8 +247,8 @@ export default function WeddingCard() {
                         Eduardo Contreras 
                       </p>
                     </div>
-
-                    <div className="text-center space-y-2 mt-5">
+                  </div>
+                  <div className="text-center space-y-2 mt-5">
                       <h4 className="font-display font-semibold text-stone-800 text-base md:text-lg lg:text-xl tracking-wide uppercase">
                         Padrinos de Velación
                       </h4>
@@ -259,7 +259,6 @@ export default function WeddingCard() {
                         Luis Zapata
                       </p>
                     </div>
-                  </div>
                 </div>
 
                   <Contador />
