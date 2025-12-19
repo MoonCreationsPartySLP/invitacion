@@ -76,7 +76,7 @@ export default function WeddingCard() {
     try {
       setIsGeneratingPDF(true)
 
-      const html2pdf = (await import("html2pdf.js")).default
+      {/*const html2pdf = (await import("html2pdf.js")).default
 
       const element = document.createElement("div")
       element.style.width = "800px"
@@ -107,11 +107,21 @@ export default function WeddingCard() {
         html2canvas: { scale: 2, useCORS: true, logging: false },
         jsPDF: { unit: "in", format: "A3", orientation: "portrait" }, 
       }
+      await html2pdf().set(opt).from(element).save()*/
+        
+      const link = document.createElement("a")
+      link.href = "/InvitacionBodaAyE-MoonCreationsPartySLP.pdf"
+      link.target = "_blank"
+      link.download = "InvitacionBodaAyE-MoonCreationsPartySLP.pdf"
+  
+      document.body.appendChild(link)
+      link.click()
+      document.body.removeChild(link)
 
-      await html2pdf().set(opt).from(element).save()
+      
     } catch (error) {
       console.error("Error generating PDF:", error)
-      alert("There was an error generating the PDF. Please try again.")
+      alert("There was an error download the PDF. Please try again.")
     } finally {
       setIsGeneratingPDF(false)
     }
@@ -449,7 +459,7 @@ export default function WeddingCard() {
                       e.stopPropagation()
                       handleDownloadPDF() }} 
                       disabled={isGeneratingPDF} >
-                      {isGeneratingPDF ? "Generating PDF..." : "Descargar Invitación"}
+                      {isGeneratingPDF ? "Descargando PDF..." : "Descargar Invitación"}
                     </Button>
                     <p className="text-xs md:text-sm lg:text-base text-center text-stone-500 italic mt-2 md:mt-3 font-display">
                     Toca para Voltear
