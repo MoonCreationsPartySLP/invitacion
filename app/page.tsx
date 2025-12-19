@@ -276,7 +276,7 @@ export default function WeddingCard() {
                   </div>
 
                   <div className="space-y-3 md:space-y-4">
-                      {*/icono*/}
+                      {/*icono*/}
                       <div className="flex justify-center mb-2">
                         <img src="/icons/iglesia.png" alt="Ceremonia Religiosa" className="
                         w-8 h-8
@@ -290,7 +290,7 @@ export default function WeddingCard() {
                           <h4 className="font-greatv text-stone-800 text-center text-xl md:text-2xl lg:text-3xl tracking-wide">
                           Ceremonia Religiosa
                           </h4>
-                          {*/Detalles*/}
+                          {/*Detalles*/}
                           <div className="text-center space-y-1 md:space-y-2">
                             <p className="text-sm md:text-base lg:text-lg font-display font-medium text-stone-700">
                             Parroquia de Nuestra Señora de la Candelaria 
@@ -304,7 +304,7 @@ export default function WeddingCard() {
                             <p className="text-sm md:text-base lg:text-lg font-display text-stone-600"></p>
                             <p className="text-sm md:text-base lg:text-lg font-display text-stone-600"></p>
                           </div>
-                          {*/botones*/}
+                          {/*botones*/}
                           <div className="flex flex-col sm:flex-row justify-center gap-3 md:gap-6 mt-3 md:mt-4">
                             <Button variant="link" className="text-[#8B7355] hover:text-[#6B5335] p-0 h-auto text-sm md:text-base lg:text-lg font-display" 
                               onClick={(e) => { 
@@ -335,10 +335,10 @@ export default function WeddingCard() {
                           </div>
                       </div>
 
-                      {*/Recepción----*/}
+                      {/*Recepción----*/}
 
                       <div className="space-y-3 md:space-y-4">
-                          {*/icono*/}
+                          {/*icono*/}
                           <div className="flex justify-center mb-2">
                             <img src="/icons/recepcion.png" alt="Recepcion" className=" 
                               w-8 h-8
@@ -366,7 +366,7 @@ export default function WeddingCard() {
                           </div>
                       </div>  
 
-                      {*/botones*/}
+                      {/*botones*/}
 
                       <div className="flex flex-col sm:flex-row justify-center gap-3 md:gap-6 mt-3 md:mt-4">
                         <Button variant="link" className="text-[#8B7355] hover:text-[#6B5335] p-0 h-auto text-sm md:text-base lg:text-lg font-display" 
