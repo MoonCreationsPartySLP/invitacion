@@ -406,7 +406,7 @@ export default function WeddingCard() {
 
                       {/* Código de Vestimenta */}
 
-                      <div className="space-y-3 md:space-y-4">
+                    {/*<div className="space-y-3 md:space-y-4">
                           <div className="flex justify-center mb-2">
                             <img src="/icons/dress.png" alt="Code Dress" className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 opacity-90"/>
                           </div>
@@ -422,7 +422,7 @@ export default function WeddingCard() {
                               Con cariño les pedimos evitar prendas en color blanco y tonos similares.
                             </p>
                           </div>
-                      </div>
+                      </div>*/}
 
                       {/* Mensaje Final */}
 
