@@ -239,7 +239,7 @@ export default function WeddingCard() {
               
                   {/* Padres de la novia */}
                   <div className="space-y-2">
-                    <h4 className="font-display font-semibold text-stone-800 text-base md:text-lg lg:text-xl tracking-wide uppercase">
+                    <h4 className="font-display font-semibold text-stone-800 text-base md:text-base lg:text-lg tracking-wide uppercase">
                       Padres de la novia
                     </h4>
                     <p className="text-sm md:text-base lg:text-xl font-display text-stone-600">
@@ -252,7 +252,7 @@ export default function WeddingCard() {
               
                   {/* Padres del novio */}
                   <div className="space-y-2">
-                    <h4 className="font-display font-semibold text-stone-800 text-base md:text-lg lg:text-xl tracking-wide uppercase">
+                    <h4 className="font-display font-semibold text-stone-800 text-base md:text-base lg:text-lg tracking-wide uppercase">
                       Padres del novio
                     </h4>
                     <p className="text-sm md:text-base lg:text-xl font-display text-stone-600">
@@ -265,7 +265,7 @@ export default function WeddingCard() {
               
                   {/* Padrinos centrado */}
                   <div className="sm:col-span-2 space-y-2 pt-2">
-                    <h4 className="font-display font-semibold text-stone-800 text-base md:text-lg lg:text-xl tracking-wide uppercase">
+                    <h4 className="font-display font-semibold text-stone-800 text-base md:text-base lg:text-lg tracking-wide uppercase">
                       Padrinos de Velación
                     </h4>
                     <p className="text-sm md:text-base lg:text-xl font-display text-stone-600">
