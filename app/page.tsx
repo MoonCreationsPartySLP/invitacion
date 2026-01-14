@@ -224,51 +224,60 @@ export default function WeddingCard() {
 
                 <div className="border-t border-transparent pt-3 md:pt-4" />
 
-                <div className="space-y-3 md:space-y-4">
-                  <div className="text-center space-y-1 md:space-y-2">
-                    <p className="text-sm md:text-base lg:text-xl font-display font-medium text-stone-700">
-                      Cada momento juntos nos ha llevado a este día tan especial. Junto a nuestros padres, tenemos el honor de invitarte a celebrar nuestra boda y
-                      compartir con nosotros la felicidad de comenzar una nueva etapa en nuestras vidas.
+                <div className="space-y-6">
+                {/* Texto introductorio */}
+                <div className="text-center max-w-4xl mx-auto">
+                  <p className="text-sm md:text-base lg:text-xl font-display font-medium text-stone-700">
+                    Cada momento juntos nos ha llevado a este día tan especial. Junto a nuestros padres,
+                    tenemos el honor de invitarte a celebrar nuestra boda y compartir con nosotros la
+                    felicidad de comenzar una nueva etapa en nuestras vidas.
+                  </p>
+                </div>
+              
+                {/* Grid principal */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-8 gap-x-16 text-center">
+              
+                  {/* Padres de la novia */}
+                  <div className="space-y-2">
+                    <h4 className="font-display font-semibold text-stone-800 text-base md:text-lg lg:text-xl tracking-wide uppercase">
+                      Padres de la novia
+                    </h4>
+                    <p className="text-sm md:text-base lg:text-xl font-display text-stone-600">
+                      Marcelina Vázquez y
+                    </p>
+                    <p className="text-sm md:text-base lg:text-xl font-display text-stone-600">
+                      Luis Zapata
                     </p>
                   </div>
-                
-                  <div className="flex flex-col sm:flex-row justify-center gap-16 mt-6">
-                    <div className="text-center space-y-2">
-                      <h4 className="font-display font-semibold text-stone-800 text-base md:text-lg lg:text-xl tracking-wide uppercase">
-                        Padres de la novia
-                      </h4>
-                      <p className="text-sm md:text-base lg:text-xl font-display text-stone-600">
-                        Marcelina Vázquez y
-                      </p>
-                      <p className="text-sm md:text-base lg:text-xl font-display text-stone-600">
-                        Luis Zapata
-                      </p>
-                    </div>
-
-                    <div className="text-center space-y-2">
-                      <h4 className="font-display font-semibold text-stone-800 text-base md:text-lg lg:text-xl tracking-wide uppercase">
-                        Padres del novio
-                      </h4>
-                      <p className="text-sm md:text-base lg:text-xl font-display text-stone-600">
-                        Irene Torres y
-                      </p>
-                      <p className="text-sm md:text-base lg:text-xl font-display text-stone-600">
-                        Eduardo Contreras 
-                      </p>
-                    </div>
+              
+                  {/* Padres del novio */}
+                  <div className="space-y-2">
+                    <h4 className="font-display font-semibold text-stone-800 text-base md:text-lg lg:text-xl tracking-wide uppercase">
+                      Padres del novio
+                    </h4>
+                    <p className="text-sm md:text-base lg:text-xl font-display text-stone-600">
+                      Irene Torres y
+                    </p>
+                    <p className="text-sm md:text-base lg:text-xl font-display text-stone-600">
+                      Eduardo Contreras
+                    </p>
                   </div>
-                  <div className="text-center space-y-2 mt-5">
-                      <h4 className="font-display font-semibold text-stone-800 text-base md:text-lg lg:text-xl tracking-wide uppercase">
-                        Padrinos de Velación
-                      </h4>
-                      <p className="text-sm md:text-base lg:text-xl font-display text-stone-600">
-                        Marcelina Vázquez y
-                      </p>
-                      <p className="text-sm md:text-base lg:text-xl font-display text-stone-600">
-                        Luis Zapata
-                      </p>
-                    </div>
+              
+                  {/* Padrinos centrado */}
+                  <div className="sm:col-span-2 space-y-2 pt-2">
+                    <h4 className="font-display font-semibold text-stone-800 text-base md:text-lg lg:text-xl tracking-wide uppercase">
+                      Padrinos de Velación
+                    </h4>
+                    <p className="text-sm md:text-base lg:text-xl font-display text-stone-600">
+                      Marcelina Vázquez y
+                    </p>
+                    <p className="text-sm md:text-base lg:text-xl font-display text-stone-600">
+                      Luis Zapata
+                    </p>
+                  </div>
+              
                 </div>
+              </div>
 
                   <Contador />
 
@@ -462,7 +471,7 @@ export default function WeddingCard() {
                       {isGeneratingPDF ? "Descargando PDF..." : "Descargar Invitación"}
                     </Button>
                     <p className="text-xs md:text-sm lg:text-base text-center text-stone-500 italic mt-2 md:mt-3 font-display">
-                    Toca para Voltear
+                    Toca para girar.
                     </p>
                   </div>
               </div>
@@ -470,7 +479,7 @@ export default function WeddingCard() {
           </div>
         </div>
         <p className="text-center text-sm md:text-base text-stone-600 mt-4 md:mt-6">
-        ¡Da Clic sobre la tarjeta para ver los Detalles!
+        ¡Da clic sobre la tarjeta para ver los detalles!
         </p>
       </div>
     )}
